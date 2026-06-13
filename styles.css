@@ -785,24 +785,19 @@ svg {
 
 .project-rail {
   display: grid;
-  grid-template-columns: 1.35fr 1fr 1fr;
-  gap: 18px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
   max-width: 1240px;
   margin: 0 auto;
 }
 
 .project-card {
   display: grid;
-  grid-template-rows: 230px auto;
+  grid-template-rows: auto 1fr;
   overflow: hidden;
   background: var(--white);
   border: 1px solid var(--dark-line);
   border-radius: 8px;
-}
-
-.project-card.large {
-  grid-row: span 2;
-  grid-template-rows: 430px auto;
 }
 
 .project-card > div:last-child {
@@ -845,6 +840,7 @@ svg {
   display: grid;
   place-items: center;
   overflow: hidden;
+  aspect-ratio: 16 / 9;
   min-height: 0;
 }
 
@@ -853,57 +849,27 @@ svg {
   top: 18px;
   left: 18px;
   z-index: 2;
+  padding: 8px 10px;
+  color: var(--white);
+  background: rgba(5, 5, 5, 0.76);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 5px;
   font: 700 14px/1 var(--mono);
 }
 
-.black-visual {
-  color: var(--white);
+.photo-visual {
   background: var(--black);
 }
 
-.light-visual {
-  color: var(--ink);
-  background:
-    linear-gradient(rgba(5, 5, 5, 0.08) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(5, 5, 5, 0.08) 1px, transparent 1px),
-    var(--paper-deep);
-  background-size: 34px 34px;
+.project-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 220ms ease;
 }
 
-.network-visual {
-  color: var(--white);
-  background: #151515;
-}
-
-.mini-dashboard {
-  width: 76%;
-  height: 62%;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  background:
-    linear-gradient(90deg, rgba(184, 255, 90, 0.28) 0 18%, transparent 18% 100%),
-    repeating-linear-gradient(to bottom, rgba(255, 255, 255, 0.13) 0 1px, transparent 1px 22px);
-  box-shadow: 20px 20px 0 rgba(50, 215, 255, 0.16);
-}
-
-.lab-object {
-  width: 190px;
-  height: 190px;
-  border: 1px solid var(--ink);
-  border-radius: 50%;
-  background:
-    radial-gradient(circle at 50% 32%, var(--orange) 0 8px, transparent 9px),
-    repeating-linear-gradient(120deg, transparent 0 13px, rgba(5, 5, 5, 0.16) 13px 15px);
-}
-
-.node-graph {
-  width: 76%;
-  height: 62%;
-  background:
-    radial-gradient(circle at 20% 25%, var(--green) 0 6px, transparent 7px),
-    radial-gradient(circle at 76% 32%, var(--blue) 0 6px, transparent 7px),
-    radial-gradient(circle at 48% 72%, var(--orange) 0 6px, transparent 7px),
-    linear-gradient(28deg, transparent 48%, rgba(255, 255, 255, 0.3) 49%, transparent 50%),
-    linear-gradient(-28deg, transparent 48%, rgba(255, 255, 255, 0.3) 49%, transparent 50%);
+.project-card:hover .project-visual img {
+  transform: scale(1.035);
 }
 
 .content-events {
@@ -955,7 +921,7 @@ svg {
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
-  cursor: pointer;
+  cursor: default;
   transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
 }
 
@@ -1014,6 +980,27 @@ svg {
   border-color: rgba(184, 255, 90, 0.42);
   background: rgba(255, 255, 255, 0.1);
   outline: none;
+}
+
+.event-empty {
+  min-height: 242px;
+  display: grid;
+  align-content: center;
+  padding: 22px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+}
+
+.event-empty h3 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.event-empty p {
+  margin: 10px 0 0;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.7;
 }
 
 .event-list time {
@@ -1138,8 +1125,7 @@ dialog {
   background: transparent;
 }
 
-dialog.post-modal,
-dialog.event-modal {
+dialog.post-modal {
   width: min(92vw, 820px);
 }
 
@@ -1150,8 +1136,7 @@ dialog::backdrop {
 
 .composer-card,
 .search-card,
-.post-detail-card,
-.event-detail-card {
+.post-detail-card {
   position: relative;
   display: grid;
   gap: 16px;
@@ -1165,8 +1150,7 @@ dialog::backdrop {
 
 .composer-card h2,
 .search-card h2,
-.post-detail-card h2,
-.event-detail-card h2 {
+.post-detail-card h2 {
   margin: 0;
   font: 700 34px/1.12 var(--serif);
 }
@@ -1236,8 +1220,7 @@ dialog::backdrop {
   font-size: 14px;
 }
 
-.post-detail-card,
-.event-detail-card {
+.post-detail-card {
   max-height: min(82vh, 760px);
   overflow: auto;
 }
@@ -1298,54 +1281,6 @@ dialog::backdrop {
 .post-detail-footer span {
   color: var(--muted);
   font: 700 13px/1 var(--mono);
-}
-
-.event-signup-fields {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 14px;
-}
-
-.event-signup-fields label {
-  display: grid;
-  gap: 8px;
-  font-size: 14px;
-  font-weight: 700;
-}
-
-.event-signup-fields label:last-child {
-  grid-column: 1 / -1;
-}
-
-.event-signup-fields input,
-.event-signup-fields textarea {
-  width: 100%;
-  padding: 13px 14px;
-  color: var(--ink);
-  background: rgba(255, 255, 255, 0.66);
-  border: 1px solid var(--dark-line);
-  border-radius: 6px;
-  outline: none;
-}
-
-.event-signup-fields textarea {
-  resize: vertical;
-}
-
-.event-success {
-  margin: 0;
-  padding: 14px;
-  color: #244100;
-  background: rgba(184, 255, 90, 0.38);
-  border: 1px solid rgba(36, 65, 0, 0.18);
-  border-radius: 6px;
-  line-height: 1.7;
-}
-
-.event-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
 }
 
 .reveal {
@@ -1410,10 +1345,6 @@ dialog::backdrop {
 
   .project-rail {
     grid-template-columns: 1fr 1fr;
-  }
-
-  .project-card.large {
-    grid-column: 1 / -1;
   }
 
   .join-grid {
@@ -1536,10 +1467,6 @@ dialog::backdrop {
   .post-detail-footer {
     align-items: flex-start;
     flex-direction: column;
-  }
-
-  .event-signup-fields {
-    grid-template-columns: 1fr;
   }
 
   .site-footer {

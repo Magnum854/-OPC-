@@ -136,53 +136,6 @@ const posts = {
   },
 };
 
-const events = {
-  "opc-salon-12": {
-    status: "报名中",
-    open: true,
-    title: "OPC 技术沙龙 Vol.12：AI 产品的增长与落地",
-    info: "6 月 15 日 周六 14:00-17:00 ｜ 科技楼 2 楼报告厅",
-    body: [
-      {
-        heading: "活动内容",
-        text: "围绕 AI 产品从 Demo 走向真实使用场景的过程，讨论需求判断、增长假设、落地路径和团队协作方式。",
-      },
-      {
-        heading: "适合参加的人",
-        list: ["正在做 AI 应用的同学", "想了解产品增长和 MVP 验证的人", "希望找到项目队友的开发者与产品同学"],
-      },
-    ],
-  },
-  "vibe-workshop": {
-    status: "报名中",
-    open: true,
-    title: "Vibe Coding 工作坊：从想法到 MVP",
-    info: "6 月 22 日 周六 10:00-17:00 ｜ 创客空间 101",
-    body: [
-      {
-        heading: "活动内容",
-        text: "一天时间完成从问题定义、页面草图、AI 辅助开发到可演示 MVP 的完整流程。现场会提供分组、导师巡场和最终展示。",
-      },
-      {
-        heading: "你需要准备",
-        list: ["一个想解决的问题或感兴趣的方向", "可携带电脑参加现场共创", "愿意在最后 3 分钟展示你的原型"],
-      },
-    ],
-  },
-  "hackathon-review": {
-    status: "筹备中",
-    open: false,
-    title: "黑客松项目复盘：为什么要解决一个真实问题",
-    info: "6 月 29 日 周六 09:30-12:00 ｜ 腾讯中心 3 楼",
-    body: [
-      {
-        heading: "活动说明",
-        text: "本场活动仍在筹备中，暂未开放报名。后续会邀请首届黑客松优秀团队分享需求判断、现场协作和 Demo 展示经验。",
-      },
-    ],
-  },
-};
-
 const feed = document.querySelector("[data-demand-feed]");
 const tabs = document.querySelectorAll("[data-filter]");
 const searchInput = document.querySelector("[data-board-search]");
@@ -196,15 +149,6 @@ const postTitle = document.querySelector("[data-post-title]");
 const postCategory = document.querySelector("[data-post-category]");
 const postSummary = document.querySelector("[data-post-summary]");
 const postBody = document.querySelector("[data-post-body]");
-const eventModal = document.querySelector("[data-event-modal]");
-const eventForm = document.querySelector("[data-event-form]");
-const eventTitle = document.querySelector("[data-event-title]");
-const eventStatus = document.querySelector("[data-event-status]");
-const eventInfo = document.querySelector("[data-event-info]");
-const eventDesc = document.querySelector("[data-event-desc]");
-const eventSignup = document.querySelector("[data-event-signup]");
-const eventSuccess = document.querySelector("[data-event-success]");
-const eventSubmit = document.querySelector("[data-event-submit]");
 
 let activeFilter = "全部";
 let activeSearch = "";
@@ -360,52 +304,6 @@ document.querySelectorAll("[data-post-id]").forEach((article) => {
 document.querySelectorAll("[data-close-post]").forEach((button) => {
   button.addEventListener("click", () => setDialogState(postModal, false));
 });
-
-function openEvent(eventId) {
-  const event = events[eventId];
-  if (!event || !eventModal) return;
-  eventTitle.textContent = event.title;
-  eventStatus.textContent = event.status;
-  eventInfo.textContent = event.info;
-  eventDesc.innerHTML = event.body
-    .map((block) => {
-      const list = block.list
-        ? `<ul>${block.list.map((item) => `<li>${item}</li>`).join("")}</ul>`
-        : "";
-      const text = block.text ? `<p>${block.text}</p>` : "";
-      return `<section><h3>${block.heading}</h3>${text}${list}</section>`;
-    })
-    .join("");
-  eventSignup.hidden = !event.open;
-  eventSubmit.hidden = !event.open;
-  eventSuccess.hidden = true;
-  eventForm.dataset.activeEvent = eventId;
-  eventForm.reset();
-  setDialogState(eventModal, true);
-}
-
-document.querySelectorAll("[data-event-id]").forEach((article) => {
-  article.addEventListener("click", () => openEvent(article.dataset.eventId));
-  article.addEventListener("keydown", (event) => {
-    if (event.key === "Enter" || event.key === " ") {
-      event.preventDefault();
-      openEvent(article.dataset.eventId);
-    }
-  });
-});
-
-document.querySelectorAll("[data-close-event]").forEach((button) => {
-  button.addEventListener("click", () => setDialogState(eventModal, false));
-});
-
-if (eventForm) {
-  eventForm.addEventListener("submit", (event) => {
-    event.preventDefault();
-    eventSuccess.hidden = false;
-    eventSignup.hidden = true;
-    eventSubmit.hidden = true;
-  });
-}
 
 document.querySelectorAll("dialog").forEach((dialog) => {
   dialog.addEventListener("close", () => document.body.classList.remove("modal-open"));
