@@ -67,6 +67,7 @@ sitemap.xml
 manifest.webmanifest
 feed.xml
 llms.txt
+39693593aa374e22914250b3fd28dee3.txt
 404.html
 ```
 
@@ -85,7 +86,9 @@ The Sitemap currently expects these HTML pages to exist:
 
 Do not deploy a Sitemap that lists missing, redirected, non-canonical, or `noindex` pages. Maintenance details are in [SEO_GEO.md](SEO_GEO.md).
 
-After deployment, verify each support file and every Sitemap URL returns `200`. Also check the response headers and HTML do not include `X-Robots-Tag: noindex` or a meta `noindex` directive. Request one random nonexistent path and confirm it returns a real `404` response; without the root `404.html`, Cloudflare Pages may treat the site as an SPA and return the homepage with `200` for unknown paths.
+After deployment, verify each support file, the IndexNow key file, and every Sitemap URL returns `200`. Also check the response headers and HTML do not include `X-Robots-Tag: noindex` or a meta `noindex` directive. Request one random nonexistent path and confirm it returns a real `404` response; without the root `404.html`, Cloudflare Pages may treat the site as an SPA and return the homepage with `200` for unknown paths.
+
+When canonical pages are added, updated, or deleted, submit only those changed URLs to IndexNow after the deployment is live. The current endpoint, key location, response meanings, and maintenance rules are documented in [SEO_GEO.md](SEO_GEO.md).
 
 ## Common Issues
 

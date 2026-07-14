@@ -23,6 +23,7 @@ robots.txt    爬虫规则与 Sitemap 声明
 sitemap.xml   公开 canonical URL 清单
 feed.xml      文章 RSS 订阅
 llms.txt      AI 工具可选的站点导航补充
+39693593aa374e22914250b3fd28dee3.txt IndexNow 站点所有权验证
 404.html      Cloudflare Pages 真实 404 页面
 ```
 
