@@ -1406,6 +1406,14 @@ svg {
   letter-spacing: -0.035em;
 }
 
+.subpage-title-label {
+  display: block;
+  margin-bottom: 18px;
+  color: var(--green);
+  font: 700 clamp(14px, 1.2vw, 18px)/1.25 var(--mono);
+  letter-spacing: 0.12em;
+}
+
 .subpage-hero-copy > p:not(.hero-eyebrow) {
   max-width: 790px;
   margin: 28px 0 0;
