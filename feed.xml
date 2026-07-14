@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>深大 OPC 社区文章</title>
+    <link>https://szu-opc.pages.dev/</link>
+    <description>深大 OPC 社区关于 Vibe Coding、AI 应用与真实项目落地的文章更新。</description>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 14 Jul 2026 00:00:00 +0800</lastBuildDate>
+    <atom:link href="https://szu-opc.pages.dev/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vibe Coding：让灵感直接靠近可运行的作品</title>
+      <link>https://szu-opc.pages.dev/articles/vibe-coding</link>
+      <guid isPermaLink="true">https://szu-opc.pages.dev/articles/vibe-coding</guid>
+      <pubDate>Fri, 12 Jun 2026 17:41:19 +0800</pubDate>
+      <description>从工具链、提问方式、最小可行产品到复盘方法，整理 OPC 的实践经验。</description>
+    </item>
+    <item>
+      <title>从 0 到 1：我们如何在 7 天内做出一个 AI 产品</title>
+      <link>https://szu-opc.pages.dev/articles/ai-product-7-days</link>
+      <guid isPermaLink="true">https://szu-opc.pages.dev/articles/ai-product-7-days</guid>
+      <pubDate>Fri, 12 Jun 2026 17:41:19 +0800</pubDate>
+      <description>一次校园黑客松项目的完整复盘，包括需求判断、分工和演示策略。</description>
+    </item>
+    <item>
+      <title>Prompt Engineering 不只是写提示词</title>
+      <link>https://szu-opc.pages.dev/articles/prompt-engineering</link>
+      <guid isPermaLink="true">https://szu-opc.pages.dev/articles/prompt-engineering</guid>
+      <pubDate>Fri, 12 Jun 2026 17:41:19 +0800</pubDate>
+      <description>把提示词工程放回产品流程：约束、评价、迭代和用户场景。</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+{
+  "id": "/",
+  "name": "深圳大学 OPC 社区（深大 OPC）",
+  "short_name": "深大 OPC",
+  "description": "连接真实需求、学生创造力、导师经验与行业资源的深圳大学校园科创实践社区。",
+  "lang": "zh-CN",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f5f1e8",
+  "theme_color": "#050505",
+  "icons": [
+    {
+      "src": "./LOGO.jpg",
+      "sizes": "640x640",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ]
+}

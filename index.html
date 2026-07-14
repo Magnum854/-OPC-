@@ -3,17 +3,141 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="author" content="深大 OPC 社区" />
+    <meta name="theme-color" content="#050505" />
     <meta
       name="description"
-      content="深大 OPC 社区官网，让你的每一个想法，都值得被看见。面向 Vibe Coding、AI 应用与真实项目落地的深大科创实践社区。"
+      content="深大 OPC 社区（深圳大学 OPC 社区 / SZU OPC Community）面向深大学生、教师、校友与合作伙伴，围绕 One Person Company、Vibe Coding、AI 应用、真实需求和项目共创，持续发布活动、项目与实践文章。"
     />
-    <title>深大 OPC 社区 | 让你的每一个想法，都值得被看见</title>
+    <title>深大 OPC 社区｜深圳大学 One Person Company 与 Vibe Coding 科创社区</title>
+    <link rel="canonical" href="https://szu-opc.pages.dev/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://szu-opc.pages.dev/" />
+    <link rel="alternate" hreflang="x-default" href="https://szu-opc.pages.dev/" />
+    <link rel="icon" href="./LOGO.jpg" type="image/jpeg" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="alternate" type="application/rss+xml" title="深大 OPC 社区内容更新" href="./feed.xml" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta property="og:site_name" content="深大 OPC 社区" />
+    <meta property="og:title" content="深大 OPC 社区｜深圳大学 One Person Company 与 Vibe Coding 科创社区" />
+    <meta
+      property="og:description"
+      content="连接深大学生、教师、校友与合作伙伴，把真实需求、AI 创意和 Vibe Coding 实践落地为可验证的作品。"
+    />
+    <meta property="og:url" content="https://szu-opc.pages.dev/" />
+    <meta property="og:image" content="https://szu-opc.pages.dev/LOGO.jpg" />
+    <meta property="og:image:width" content="640" />
+    <meta property="og:image:height" content="640" />
+    <meta property="og:image:alt" content="深大 OPC 社区品牌标识" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="深大 OPC 社区｜深圳大学 OPC 科创实践社区" />
+    <meta
+      name="twitter:description"
+      content="围绕 One Person Company、Vibe Coding、AI 应用与真实项目共创，让每一个想法都有机会落地。"
+    />
+    <meta name="twitter:image" content="https://szu-opc.pages.dev/LOGO.jpg" />
+    <meta name="twitter:image:alt" content="深大 OPC 社区品牌标识" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://szu-opc.pages.dev/#organization",
+            "name": "深大 OPC 社区",
+            "alternateName": [
+              "深大OPC",
+              "深圳大学 OPC 社区",
+              "深圳大学OPC社区",
+              "深圳大学OPC",
+              "SZU OPC Community"
+            ],
+            "url": "https://szu-opc.pages.dev/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://szu-opc.pages.dev/LOGO.jpg",
+              "width": 640,
+              "height": 640
+            },
+            "description": "面向深圳大学学生、教师、校友与合作伙伴的 One Person Company、Vibe Coding 与 AI 项目实践社区。",
+            "knowsAbout": [
+              "One Person Company",
+              "Vibe Coding",
+              "人工智能应用",
+              "项目共创",
+              "校园科创",
+              "黑客松"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://szu-opc.pages.dev/#website",
+            "url": "https://szu-opc.pages.dev/",
+            "name": "深大 OPC 社区",
+            "alternateName": ["深圳大学 OPC 社区", "深大OPC", "SZU OPC Community"],
+            "description": "深大 OPC 社区的项目、活动、实践文章与加入入口。",
+            "publisher": { "@id": "https://szu-opc.pages.dev/#organization" },
+            "inLanguage": "zh-CN"
+          },
+          {
+            "@type": ["WebPage", "FAQPage"],
+            "@id": "https://szu-opc.pages.dev/#webpage",
+            "url": "https://szu-opc.pages.dev/",
+            "name": "深大 OPC 社区｜深圳大学 One Person Company 与 Vibe Coding 科创社区",
+            "isPartOf": { "@id": "https://szu-opc.pages.dev/#website" },
+            "about": { "@id": "https://szu-opc.pages.dev/#organization" },
+            "description": "深大 OPC 社区官网，介绍社区定位、项目、活动、文章与加入方式。",
+            "dateModified": "2026-07-14",
+            "inLanguage": "zh-CN",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "深大 OPC 社区是什么？",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "深大 OPC 社区也称深圳大学 OPC 社区或 SZU OPC Community，是面向深圳大学学生、教师、校友与合作伙伴的科创实践社区，围绕真实需求、AI 应用、Vibe Coding 和项目共创开展活动与内容沉淀。"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "OPC 在深大 OPC 社区中代表什么？",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "OPC 首先指 One Person Company，强调 AI 时代个体被放大的创造力；同时承载 O（Open、Original、One）、P（Potential、Pioneer）、C（Challenge、Cultivate）的社区价值。"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "谁可以加入深圳大学 OPC 社区？",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "社区面向对 Vibe Coding、AI 应用和项目落地感兴趣的深圳大学在校生、教师与研究者、校友，也欢迎带着真实需求与资源的合作伙伴参与共创。"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "深大 OPC 社区主要做什么？",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "社区持续沉淀项目与数据，组织项目共创、技术评选、人物访谈、技术沙龙、创意工作坊和复盘分享，并连接导师、校友与行业资源。"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">跳到主要内容</a>
     <header class="site-header" data-elevated="false">
       <a class="brand" href="#home" aria-label="返回首页">
-        <img src="./LOGO.jpg" alt="深大 OPC 社区 Logo" />
+        <img src="./LOGO.jpg" alt="深大 OPC 社区 Logo" width="640" height="640" decoding="async" />
         <span>
           <strong>深大 OPC 社区</strong>
           <small>SZU OPC Community</small>
@@ -22,9 +146,9 @@
 
       <nav class="desktop-nav" aria-label="主导航">
         <a href="#home">首页</a>
-        <a href="#about">关于</a>
+        <a href="./about">关于</a>
         <a href="#board">需求看板</a>
-        <a href="#projects">项目</a>
+        <a href="./projects">项目</a>
         <a href="#posts">文章</a>
         <a href="#events">活动</a>
         <a href="#join">加入我们</a>
@@ -48,23 +172,28 @@
 
     <aside class="mobile-panel" aria-hidden="true" data-mobile-panel>
       <a href="#home">首页</a>
-      <a href="#about">关于 OPC</a>
+      <a href="./about">关于 OPC</a>
       <a href="#board">需求看板</a>
-      <a href="#projects">项目展示</a>
+      <a href="./projects">项目展示</a>
       <a href="#posts">社区文章</a>
       <a href="#events">活动</a>
       <a href="#join">加入我们</a>
     </aside>
 
-    <main>
+    <main id="main-content">
       <section class="hero section-dark" id="home">
         <canvas class="network-canvas" aria-hidden="true"></canvas>
         <div class="hero-grid">
           <div class="hero-copy reveal">
-            <h1><span>让你的</span><span>每一个想法，</span><span>都值得被看见</span></h1>
+            <p class="hero-eyebrow">深圳大学 One Person Company × Vibe Coding 社区</p>
+            <h1>
+              <span class="hero-brand-line">深大 OPC 社区</span>
+              <span>让你的每一个想法，</span>
+              <span>都值得被看见</span>
+            </h1>
             <p>
-              深大 OPC 社区连接真实需求、学生创造力、导师经验与行业资源，
-              让灵感不止停留在脑海里，而是被共创、被验证、被展示。
+              深大 OPC 社区，也称深圳大学 OPC 社区或 SZU OPC Community，连接真实需求、
+              学生创造力、导师经验与行业资源，让灵感被共创、被验证、被展示。
             </p>
             <div class="hero-actions">
               <a class="primary-cta" href="#board">
@@ -94,10 +223,18 @@
                 <dd>Vibe Coding</dd>
               </div>
             </dl>
+            <p class="stats-source">首届深圳大学校内 Vibe Coding 黑客松成果记录</p>
           </div>
 
           <div class="hero-mark reveal">
-            <img src="./LOGO.jpg" alt="深大 OPC 社区品牌标识" />
+            <img
+              src="./LOGO.jpg"
+              alt="深大 OPC 社区品牌标识"
+              width="640"
+              height="640"
+              decoding="async"
+              fetchpriority="high"
+            />
             <div class="orbit orbit-one"></div>
             <div class="orbit orbit-two"></div>
           </div>
@@ -105,19 +242,48 @@
       </section>
 
       <section class="intro-strip">
-        <p>门面 / 工具 / 内容 / 入口</p>
-        <strong>一个具有开发者杂志气质的深大科创社区平台。</strong>
-        <a href="#about">了解 OPC</a>
+        <p>ONE PERSON / ONE IDEA / ONE BUILD</p>
+        <strong>属于深大的 AI 创意、Vibe Coding 与真实项目共创入口。</strong>
+        <a href="./about">了解 OPC</a>
       </section>
 
       <section class="section paper-section" id="about">
         <div class="section-heading reveal">
           <span class="section-number">01</span>
-          <h2>OPC 是什么</h2>
+          <h2>深大 OPC 社区是什么</h2>
           <p>
-            深大 OPC 社区依托首届校内黑客松而成立，连接在校生、教授、校友与企业，
-            让你的每一个想法，都值得被看见，也有机会落地成作品。
+            深大 OPC 社区是面向深圳大学在校生、教师与研究者、校友及合作伙伴的科创实践社区。
+            社区依托首届校内 Vibe Coding 黑客松而成立，围绕真实需求、AI 应用与项目共创，
+            帮助创意落地为可验证、可展示、可继续生长的作品。
           </p>
+        </div>
+        <div class="entity-profile reveal" aria-label="深大 OPC 社区实体信息">
+          <div class="entity-answer">
+            <span>一句话定义</span>
+            <p>
+              <strong>OPC 首先指 One Person Company</strong>：AI 放大个体创造力，
+              社区则把独立行动者连接成能共同发现问题、完成作品并持续复盘的实践网络。
+            </p>
+          </div>
+          <dl>
+            <div>
+              <dt>社区名称</dt>
+              <dd>深大 OPC 社区</dd>
+            </div>
+            <div>
+              <dt>常用名称</dt>
+              <dd>深圳大学 OPC 社区 / 深大OPC</dd>
+            </div>
+            <div>
+              <dt>英文名称</dt>
+              <dd>SZU OPC Community</dd>
+            </div>
+            <div>
+              <dt>核心方向</dt>
+              <dd>One Person Company / Vibe Coding / AI 项目实践</dd>
+            </div>
+          </dl>
+          <a href="./about">阅读完整社区介绍 <span aria-hidden="true">→</span></a>
         </div>
         <div class="meaning-grid reveal">
           <article>
@@ -174,7 +340,7 @@
             <div>
               <span class="section-number">03</span>
               <h2>需求看板</h2>
-              <p>Reddit 信息流 + CSDN 问题结构 + 校园项目广场。这里是官网的日常访问理由。</p>
+              <p>收集校园、实验室与合作伙伴的真实问题，帮助成员寻找队友、导师、反馈与项目机会。当前看板处于内测阶段，页面内容用于展示需求结构与共创方式。</p>
             </div>
             <button class="primary-cta compact" type="button" data-open-composer>
               发布需求
@@ -204,7 +370,17 @@
           </div>
 
           <div class="board-layout">
-            <div class="demand-feed" data-demand-feed></div>
+            <div class="demand-feed" data-demand-feed>
+              <noscript>
+                <article class="demand-card">
+                  <div class="vote-box" aria-hidden="true"></div>
+                  <div>
+                    <h3>需求看板交互需要启用 JavaScript</h3>
+                    <p>社区介绍、项目档案与实践文章均可直接浏览；启用 JavaScript 后可使用看板筛选与搜索。</p>
+                  </div>
+                </article>
+              </noscript>
+            </div>
             <aside class="board-sidebar">
               <section>
                 <h3>本周热门</h3>
@@ -239,11 +415,19 @@
           <span class="section-number">04</span>
           <h2>项目展示</h2>
           <p>来自深圳大学首届 Vibe Coding 黑客松的真实获奖项目，记录同学们把日常问题做成作品的过程。</p>
+          <a class="section-text-link" href="./projects">查看完整项目与活动档案 <span aria-hidden="true">→</span></a>
         </div>
         <div class="project-rail reveal">
           <article class="project-card">
             <div class="project-visual photo-visual">
-              <img src="./assets/project-justice.png" alt="正义必胜队校园临时找搭子工具项目展示图" />
+              <img
+                src="./assets/project-justice.png"
+                alt="正义必胜队校园临时找搭子工具项目展示图"
+                width="1080"
+                height="608"
+                loading="lazy"
+                decoding="async"
+              />
               <span>冠军 / 93.25</span>
             </div>
             <div>
@@ -258,7 +442,14 @@
           </article>
           <article class="project-card">
             <div class="project-visual photo-visual">
-              <img src="./assets/project-rss.png" alt="哈基米南北绿豆校园活动信息筛选项目展示图" />
+              <img
+                src="./assets/project-rss.png"
+                alt="哈基米南北绿豆校园活动信息筛选项目展示图"
+                width="1080"
+                height="571"
+                loading="lazy"
+                decoding="async"
+              />
               <span>亚军 / 91.4</span>
             </div>
             <div>
@@ -273,7 +464,14 @@
           </article>
           <article class="project-card">
             <div class="project-visual photo-visual">
-              <img src="./assets/project-cats.jpg" alt="关爱猫猫队 AI 实体设备救助探索项目展示图" />
+              <img
+                src="./assets/project-cats.jpg"
+                alt="关爱猫猫队 AI 实体设备救助探索项目展示图"
+                width="1024"
+                height="559"
+                loading="lazy"
+                decoding="async"
+              />
               <span>季军 / 90.55</span>
             </div>
             <div>
@@ -288,7 +486,14 @@
           </article>
           <article class="project-card">
             <div class="project-visual photo-visual">
-              <img src="./assets/project-hackathon-overview.png" alt="深圳大学首届 Vibe Coding 黑客松真实项目清单截图" />
+              <img
+                src="./assets/project-hackathon-overview.png"
+                alt="深圳大学首届 Vibe Coding 黑客松真实项目清单截图"
+                width="1080"
+                height="611"
+                loading="lazy"
+                decoding="async"
+              />
               <span>最佳人气奖</span>
             </div>
             <div>
@@ -311,32 +516,38 @@
               <span class="section-number">05</span>
               <h2>OPC Lab Notes</h2>
             </div>
-            <a href="#posts">查看更多</a>
+            <span class="panel-label">社区实践文章</span>
           </div>
           <div class="post-list">
-            <article data-post-id="vibe-coding" role="button" tabindex="0" aria-label="查看文章：Vibe Coding：让灵感直接靠近可运行的作品">
-              <img src="./LOGO.jpg" alt="" />
-              <div>
-                <h3>Vibe Coding：让灵感直接靠近可运行的作品</h3>
-                <p>从工具链、提问方式、最小可行产品到复盘方法，整理 OPC 的实践经验。</p>
-              </div>
-              <span>技术文章</span>
+            <article>
+              <a class="post-card" href="./articles/vibe-coding">
+                <img src="./LOGO.jpg" alt="深大 OPC 社区文章封面" width="640" height="640" loading="lazy" decoding="async" />
+                <div>
+                  <h3>Vibe Coding：让灵感直接靠近可运行的作品</h3>
+                  <p>从工具链、提问方式、最小可行产品到复盘方法，整理 OPC 的实践经验。</p>
+                </div>
+                <span class="post-detail-link">阅读全文</span>
+              </a>
             </article>
-            <article data-post-id="ai-product-7-days" role="button" tabindex="0" aria-label="查看文章：从 0 到 1：我们如何在 7 天内做出一个 AI 产品">
-              <img src="./LOGO.jpg" alt="" />
-              <div>
-                <h3>从 0 到 1：我们如何在 7 天内做出一个 AI 产品</h3>
-                <p>一次校园黑客松项目的完整复盘，包括需求判断、分工和演示策略。</p>
-              </div>
-              <span>项目复盘</span>
+            <article>
+              <a class="post-card" href="./articles/ai-product-7-days">
+                <img src="./LOGO.jpg" alt="深大 OPC 社区文章封面" width="640" height="640" loading="lazy" decoding="async" />
+                <div>
+                  <h3>从 0 到 1：我们如何在 7 天内做出一个 AI 产品</h3>
+                  <p>一次校园黑客松项目的完整复盘，包括需求判断、分工和演示策略。</p>
+                </div>
+                <span class="post-detail-link">阅读全文</span>
+              </a>
             </article>
-            <article data-post-id="prompt-engineering" role="button" tabindex="0" aria-label="查看文章：Prompt Engineering 不只是写提示词">
-              <img src="./LOGO.jpg" alt="" />
-              <div>
-                <h3>Prompt Engineering 不只是写提示词</h3>
-                <p>把提示词工程放回产品流程：约束、评价、迭代和用户场景。</p>
-              </div>
-              <span>AI 实践</span>
+            <article>
+              <a class="post-card" href="./articles/prompt-engineering">
+                <img src="./LOGO.jpg" alt="深大 OPC 社区文章封面" width="640" height="640" loading="lazy" decoding="async" />
+                <div>
+                  <h3>Prompt Engineering 不只是写提示词</h3>
+                  <p>把提示词工程放回产品流程：约束、评价、迭代和用户场景。</p>
+                </div>
+                <span class="post-detail-link">阅读全文</span>
+              </a>
             </article>
           </div>
         </div>
@@ -347,16 +558,16 @@
               <span class="section-number">06</span>
               <h2>活动日历</h2>
             </div>
-            <a href="#events">查看全部</a>
+            <a href="./projects#events">查看活动档案</a>
           </div>
           <div class="event-list">
             <article>
-              <time><strong>06</strong><span>14</span></time>
+              <time datetime="2026-06-14"><strong>06</strong><span>14</span></time>
               <div>
                 <h3>去探索 AI Agent 的黑客松</h3>
                 <p>2026 年 6 月 14 日 10:00-19:00</p>
               </div>
-              <span class="status open">今日活动</span>
+              <a class="status archived" href="./projects#events">活动回顾</a>
             </article>
           </div>
         </div>
@@ -406,7 +617,7 @@
             </div>
             <h3>教授 / 研究者</h3>
             <p>发布真实需求，连接优秀学生。</p>
-            <a href="#join">联系社区</a>
+            <a href="#faq">查看参与说明</a>
           </article>
           <article>
             <div class="join-icon">
@@ -417,7 +628,7 @@
             </div>
             <h3>校友</h3>
             <p>回馈母校，提供经验与机会。</p>
-            <a href="#join">参与共创</a>
+            <a href="#faq">查看参与说明</a>
           </article>
           <article>
             <div class="join-icon">
@@ -429,30 +640,91 @@
             </div>
             <h3>企业合作</h3>
             <p>共建真实需求与项目场景。</p>
-            <a href="#join">联系合作</a>
+            <a href="#faq">查看合作说明</a>
           </article>
+        </div>
+      </section>
+
+      <section class="section faq-section" id="faq" aria-labelledby="faq-title">
+        <div class="faq-intro reveal">
+          <span class="section-number">08</span>
+          <p class="faq-kicker">ENTITY / ANSWERS / SOURCE</p>
+          <h2 id="faq-title">关于深大 OPC 的常见问题</h2>
+          <p>
+            用明确、可引用的答案说明深圳大学 OPC 社区是谁、做什么、欢迎谁参与。
+            更完整的社区定位、发展路线与名词解释可在关于页面查看。
+          </p>
+          <a class="secondary-cta dark" href="./about">阅读完整介绍</a>
+        </div>
+        <div class="faq-list reveal">
+          <details open>
+            <summary>深大 OPC 社区是什么？</summary>
+            <p>
+              深大 OPC 社区也称深圳大学 OPC 社区或 SZU OPC Community，是面向深圳大学学生、
+              教师、校友与合作伙伴的科创实践社区，围绕真实需求、AI 应用、Vibe Coding 和项目共创开展活动与内容沉淀。
+            </p>
+          </details>
+          <details>
+            <summary>OPC 在深大 OPC 社区中代表什么？</summary>
+            <p>
+              OPC 首先指 One Person Company，强调 AI 时代个体被放大的创造力；同时承载
+              O（Open、Original、One）、P（Potential、Pioneer）、C（Challenge、Cultivate）的社区价值。
+            </p>
+          </details>
+          <details>
+            <summary>深大 OPC 与其他“One Person Company / OPC”平台有什么区别？</summary>
+            <p>
+              深大 OPC 是围绕深圳大学成员与校园真实问题开展项目实践的社区，不是政务服务专区或商业服务平台。
+              我们关注学生创造力、跨专业共创、项目复盘与长期成长。
+            </p>
+          </details>
+          <details>
+            <summary>谁可以加入深圳大学 OPC 社区？</summary>
+            <p>
+              社区面向对 Vibe Coding、AI 应用和项目落地感兴趣的深圳大学在校生、教师与研究者、校友，
+              也欢迎带着真实需求与资源的合作伙伴参与共创。
+            </p>
+          </details>
+          <details>
+            <summary>深大 OPC 社区主要做什么？</summary>
+            <p>
+              社区持续沉淀项目与数据，组织项目共创、技术评选、人物访谈、技术沙龙、创意工作坊和复盘分享，
+              并连接导师、校友与行业资源，让创意逐步成为真实作品。
+            </p>
+          </details>
+          <details>
+            <summary>如何获取招新、活动与合作信息？</summary>
+            <p>
+              官网是深大 OPC 社区的长期信息入口。最新加入方式、活动安排与合作渠道会在“加入我们”和活动档案中更新；
+              在官方社交账号完成核验并接入前，本站不会展示未经确认的联系方式。
+            </p>
+          </details>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="brand footer-brand">
-        <img src="./LOGO.jpg" alt="" />
+        <img src="./LOGO.jpg" alt="深大 OPC 社区 Logo" width="640" height="640" loading="lazy" decoding="async" />
         <span>
           <strong>深大 OPC 社区</strong>
           <small>SZU OPC Community</small>
         </span>
       </div>
-      <p>让你的每一个想法，都值得被看见；让更多好想法真正落地成作品。</p>
+      <p>
+        深大 OPC 社区 · 深圳大学 OPC 社区 · SZU OPC Community<br />
+        <small>让你的每一个想法，都值得被看见 · 最近更新 <time datetime="2026-07-14">2026-07-14</time></small>
+      </p>
       <div class="footer-links">
-        <a href="#about">关于我们</a>
-        <a href="#board">社区公约</a>
-        <a href="#join">联系我们</a>
+        <a href="./about">关于我们</a>
+        <a href="./projects">项目档案</a>
+        <a href="#board">需求看板</a>
+        <a href="#faq">常见问题</a>
       </div>
     </footer>
 
     <dialog class="composer-modal" data-composer>
-      <form method="dialog" class="composer-card">
+      <form method="dialog" class="composer-card" data-composer-form>
         <button class="modal-close" type="button" data-close-composer aria-label="关闭">
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M6 6l12 12"></path>
@@ -460,7 +732,7 @@
           </svg>
         </button>
         <h2>发布一个真实需求</h2>
-        <p>初期内容会进入管理员审核。请尽量描述目标用户、问题场景和你已有的资源。</p>
+        <p>需求发布功能正在内测。你可以先整理目标用户、问题场景、期望成果和已有资源；正式提交渠道将在官网更新。</p>
         <label>
           需求标题
           <input type="text" placeholder="例如：寻找同学共建 AI 校园活动助手" />
@@ -481,13 +753,14 @@
         </label>
         <div class="modal-actions">
           <button class="secondary-cta dark" type="button" data-close-composer>取消</button>
-          <button class="primary-cta compact" type="submit">提交审核</button>
+          <button class="primary-cta compact" type="submit">查看提交状态</button>
         </div>
+        <p class="form-status" data-composer-status hidden></p>
       </form>
     </dialog>
 
     <dialog class="search-modal" data-search-modal>
-      <form method="dialog" class="search-card">
+      <form method="dialog" class="search-card" role="search" data-global-search-form>
         <button class="modal-close" type="button" data-close-search aria-label="关闭搜索">
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M6 6l12 12"></path>
@@ -495,32 +768,15 @@
           </svg>
         </button>
         <h2>搜索 OPC</h2>
-        <input type="search" placeholder="搜索需求、项目、活动或文章" />
+        <label class="sr-only" for="global-search">搜索需求、项目、活动或文章</label>
+        <input id="global-search" name="q" type="search" placeholder="搜索需求、项目、活动或文章" data-global-search />
         <div class="quick-links">
           <a href="#board">需求看板</a>
-          <a href="#projects">项目展示</a>
+          <a href="./projects">项目展示</a>
           <a href="#posts">OPC Lab Notes</a>
+          <button class="primary-cta compact" type="submit">搜索看板</button>
         </div>
       </form>
-    </dialog>
-
-    <dialog class="post-modal" data-post-modal>
-      <article class="post-detail-card">
-        <button class="modal-close" type="button" data-close-post aria-label="关闭文章">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M6 6l12 12"></path>
-            <path d="M18 6 6 18"></path>
-          </svg>
-        </button>
-        <div class="post-detail-meta" data-post-category></div>
-        <h2 data-post-title></h2>
-        <p class="post-detail-summary" data-post-summary></p>
-        <div class="post-detail-body" data-post-body></div>
-        <footer class="post-detail-footer">
-          <span>OPC Lab Notes</span>
-          <button class="primary-cta compact" type="button" data-close-post>返回文章列表</button>
-        </footer>
-      </article>
     </dialog>
 
     <script src="./script.js"></script>
