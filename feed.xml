@@ -8,6 +8,13 @@
     <lastBuildDate>Tue, 14 Jul 2026 00:00:00 +0800</lastBuildDate>
     <atom:link href="https://szu-opc.pages.dev/feed.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>什么是 OPC？从 One Person Company 到深大 OPC 社区</title>
+      <link>https://szu-opc.pages.dev/articles/what-is-opc</link>
+      <guid isPermaLink="true">https://szu-opc.pages.dev/articles/what-is-opc</guid>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 +0800</pubDate>
+      <description>结合深圳官方定义，讲清 AI 一人公司、工商法律概念与深大 OPC 社区的区别。</description>
+    </item>
+    <item>
       <title>Vibe Coding：让灵感直接靠近可运行的作品</title>
       <link>https://szu-opc.pages.dev/articles/vibe-coding</link>
       <guid isPermaLink="true">https://szu-opc.pages.dev/articles/vibe-coding</guid>

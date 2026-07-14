@@ -79,6 +79,7 @@ The Sitemap currently expects these HTML pages to exist:
 /
 /about
 /projects
+/articles/what-is-opc
 /articles/vibe-coding
 /articles/ai-product-7-days
 /articles/prompt-engineering

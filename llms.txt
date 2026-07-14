@@ -10,6 +10,7 @@ Language: zh-CN
 - [首页](https://szu-opc.pages.dev/): 社区定位、实践流程、项目与参与入口
 - [关于深大 OPC 社区](https://szu-opc.pages.dev/about): 名称、社区定位、服务对象与常见问题
 - [项目展示](https://szu-opc.pages.dev/projects): 社区公开展示的项目案例
+- [什么是 OPC？从 One Person Company 到深大 OPC 社区](https://szu-opc.pages.dev/articles/what-is-opc): 官方来源支持的 OPC 概念、深圳政策与社区语境指南
 - [Vibe Coding：让灵感直接靠近可运行的作品](https://szu-opc.pages.dev/articles/vibe-coding)
 - [从 0 到 1：我们如何在 7 天内做出一个 AI 产品](https://szu-opc.pages.dev/articles/ai-product-7-days)
 - [Prompt Engineering 不只是写提示词](https://szu-opc.pages.dev/articles/prompt-engineering)
