@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="把提示词工程放回产品流程：约束、评价、迭代和用户场景。"
+      content="Prompt Engineering 提示词工程实践指南：从任务定义、上下文、约束、输出契约到评价集、失败回退和产品化，提供深大 OPC 社区可复用的六步方法与检查清单。"
     />
     <meta
       name="robots"
       content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
     />
-    <title>Prompt Engineering 不只是写提示词 | 深大 OPC 社区</title>
+    <meta name="author" content="深大 OPC 社区" />
+    <title>Prompt Engineering 提示词工程指南｜任务、约束、评价与迭代</title>
     <link rel="canonical" href="https://szu-opc.pages.dev/articles/prompt-engineering" />
     <link rel="icon" href="../LOGO.jpg" type="image/jpeg" />
     <link rel="manifest" href="../manifest.webmanifest" />
@@ -25,10 +26,10 @@
     <meta property="og:type" content="article" />
     <meta property="og:locale" content="zh_CN" />
     <meta property="og:site_name" content="深大 OPC 社区" />
-    <meta property="og:title" content="Prompt Engineering 不只是写提示词" />
+    <meta property="og:title" content="Prompt Engineering 提示词工程指南｜任务、约束、评价与迭代" />
     <meta
       property="og:description"
-      content="把提示词工程放回产品流程：约束、评价、迭代和用户场景。"
+      content="一套从任务定义、上下文、输出契约到评价集和失败回退的可复用 Prompt Engineering 方法。"
     />
     <meta property="og:url" content="https://szu-opc.pages.dev/articles/prompt-engineering" />
     <meta property="og:image" content="https://szu-opc.pages.dev/LOGO.jpg" />
@@ -36,13 +37,13 @@
     <meta property="og:image:height" content="640" />
     <meta property="og:image:alt" content="深大 OPC 社区品牌标识" />
     <meta property="article:published_time" content="2026-06-12" />
-    <meta property="article:modified_time" content="2026-07-14" />
+    <meta property="article:modified_time" content="2026-07-15" />
 
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Prompt Engineering 不只是写提示词" />
+    <meta name="twitter:title" content="Prompt Engineering 提示词工程指南" />
     <meta
       name="twitter:description"
-      content="把提示词工程放回产品流程：约束、评价、迭代和用户场景。"
+      content="任务、上下文、约束、输出契约、评价集与失败回退：把提示词真正做成产品。"
     />
     <meta name="twitter:image" content="https://szu-opc.pages.dev/LOGO.jpg" />
     <meta name="twitter:image:alt" content="深大 OPC 社区品牌标识" />
@@ -52,42 +53,111 @@
         "@context": "https://schema.org",
         "@graph": [
           {
+            "@type": "Organization",
+            "@id": "https://szu-opc.pages.dev/#organization",
+            "name": "深大 OPC 社区",
+            "alternateName": ["深大OPC", "深大OPC社区", "深圳大学 OPC 社区", "深圳大学OPC社区", "深圳大学 OPC", "深圳大学OPC", "SZU OPC Community"],
+            "url": "https://szu-opc.pages.dev/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://szu-opc.pages.dev/LOGO.jpg",
+              "width": 640,
+              "height": 640
+            },
+            "description": "面向深圳大学学生、教师与研究者、校友及合作伙伴的 One Person Company、Vibe Coding 与 AI 项目实践社区。",
+            "disambiguatingDescription": "深大 OPC 社区的信息入口；不是深圳大学门户网站，不依据名称主张校方授权、主办、指导或组织隶属。"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://szu-opc.pages.dev/#website",
+            "url": "https://szu-opc.pages.dev/",
+            "name": "深大 OPC 社区",
+            "publisher": { "@id": "https://szu-opc.pages.dev/#organization" },
+            "inLanguage": "zh-CN"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://szu-opc.pages.dev/articles/prompt-engineering",
+            "url": "https://szu-opc.pages.dev/articles/prompt-engineering",
+            "name": "Prompt Engineering 提示词工程指南｜任务、约束、评价与迭代",
+            "description": "从任务定义、上下文、约束、输出契约到评价集和失败回退的 Prompt Engineering 实践指南。",
+            "isPartOf": { "@id": "https://szu-opc.pages.dev/#website" },
+            "about": { "@id": "https://szu-opc.pages.dev/#organization" },
+            "mainEntity": { "@id": "https://szu-opc.pages.dev/articles/prompt-engineering#article" },
+            "breadcrumb": { "@id": "https://szu-opc.pages.dev/articles/prompt-engineering#breadcrumb" },
+            "datePublished": "2026-06-12",
+            "dateModified": "2026-07-15",
+            "inLanguage": "zh-CN"
+          },
+          {
             "@type": "Article",
             "@id": "https://szu-opc.pages.dev/articles/prompt-engineering#article",
-            "headline": "Prompt Engineering 不只是写提示词",
-            "description": "把提示词工程放回产品流程：约束、评价、迭代和用户场景。",
+            "headline": "Prompt Engineering 提示词工程指南：任务、约束、评价与迭代",
+            "description": "深大 OPC 社区整理的提示词工程六步方法、评价清单、失败模式与产品化边界。",
             "articleSection": "AI 实践",
             "inLanguage": "zh-CN",
             "datePublished": "2026-06-12",
-            "dateModified": "2026-07-14",
-            "mainEntityOfPage": {
-              "@type": "WebPage",
-              "@id": "https://szu-opc.pages.dev/articles/prompt-engineering"
-            },
+            "dateModified": "2026-07-15",
+            "isAccessibleForFree": true,
+            "keywords": ["Prompt Engineering", "提示词工程", "提示词评价", "AI 产品", "深大 OPC"],
+            "mainEntityOfPage": { "@id": "https://szu-opc.pages.dev/articles/prompt-engineering" },
+            "isPartOf": { "@id": "https://szu-opc.pages.dev/#website" },
             "image": {
               "@type": "ImageObject",
               "url": "https://szu-opc.pages.dev/LOGO.jpg",
               "width": 640,
               "height": 640
             },
-            "author": {
-              "@type": "Organization",
-              "@id": "https://szu-opc.pages.dev/#organization",
-              "name": "深大 OPC 社区",
-              "url": "https://szu-opc.pages.dev/"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "@id": "https://szu-opc.pages.dev/#organization",
-              "name": "深大 OPC 社区",
-              "url": "https://szu-opc.pages.dev/",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://szu-opc.pages.dev/LOGO.jpg",
-                "width": 640,
-                "height": 640
+            "author": { "@id": "https://szu-opc.pages.dev/#organization" },
+            "publisher": { "@id": "https://szu-opc.pages.dev/#organization" }
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://szu-opc.pages.dev/articles/prompt-engineering#faq",
+            "url": "https://szu-opc.pages.dev/articles/prompt-engineering#faq",
+            "isPartOf": { "@id": "https://szu-opc.pages.dev/articles/prompt-engineering" },
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "什么是 Prompt Engineering？",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Prompt Engineering 是把用户目标、必要上下文、行为约束、输出格式和评价标准组织成模型可执行接口的过程。它不仅是写一句提示词，也包括样例、工具、数据、测试和失败回退设计。"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "提示词是不是越长越好？",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "不是。长度只有在信息确实帮助模型完成任务时才有价值。重复规则、相互冲突的要求和无关背景会增加歧义；更好的目标是让每段内容都有明确作用。"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "系统提示词和用户提示词有什么区别？",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "系统提示词通常承载稳定角色、全局规则和安全边界，用户提示词承载本次任务与输入。产品还应在代码层验证权限和输出，不能只依赖提示词保证安全。"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "如何判断一条提示词是否稳定？",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "建立覆盖正常输入、边界输入、缺失信息和对抗输入的评价集，重复运行并检查正确性、完整性、格式、事实依据、安全性和失败可恢复性，而不是只挑一条漂亮结果。"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "什么时候应该从提示词升级到检索、工具或微调？",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "当任务需要最新或私有知识、确定性计算、外部操作、严格权限或稳定领域行为时，应分别考虑检索增强、工具调用、工作流和微调；不要继续用更长提示词掩盖系统能力缺口。"
+                }
               }
-            }
+            ]
           },
           {
             "@type": "BreadcrumbList",
@@ -174,37 +244,150 @@
           </nav>
           <p class="article-category">AI 实践</p>
           <h1>Prompt Engineering 不只是写提示词</h1>
-          <p class="article-lead">把提示词工程放回产品流程：约束、评价、迭代和用户场景。</p>
+          <p class="article-lead">从任务、上下文、约束、输出契约到评价集和失败回退，把提示词真正放回产品流程。</p>
           <p class="article-meta">
             <span>发布：深大 OPC 社区</span>
             <time datetime="2026-06-12">发布于 2026-06-12</time>
-            <time datetime="2026-07-14">更新于 2026-07-14</time>
+            <time datetime="2026-07-15">更新于 2026-07-15</time>
           </p>
         </div>
       </section>
 
       <div class="content-shell article-layout">
         <article class="article-body">
-          <section>
-            <h2>提示词是产品设计的一部分</h2>
+          <section aria-labelledby="answer-heading">
+            <h2 id="answer-heading">直接答案：Prompt Engineering 是在设计 AI 的执行接口</h2>
             <p>
-              提示词不是孤立的技巧，而是产品行为的说明书。一个可靠的 AI 功能，需要明确输入边界、输出格式、失败状态和评价标准。
+              Prompt Engineering（提示词工程）是把<strong>用户目标、必要上下文、行为约束、输出格式和评价标准</strong>
+              组织成模型可执行接口的过程。它不仅是写一句提示词，也包括示例、数据、工具、测试集、权限和失败回退。
+            </p>
+            <aside class="editorial-note" aria-label="方法来源说明">
+              <strong>方法来源</strong>
+              <p>
+                本文是深大 OPC 社区用于校园 AI 项目和快速原型的第一方方法模板，不是行业标准，也不保证不同模型产生相同结果。
+                使用者应根据具体模型、数据、风险和产品场景重新测试。
+              </p>
+            </aside>
+          </section>
+
+          <section aria-labelledby="framework-heading">
+            <h2 id="framework-heading">六步框架：从任务到失败回退</h2>
+            <ol>
+              <li><strong>任务：</strong>写清用户是谁、要完成什么、什么结果才算完成。不要用“帮我优化一下”代替目标。</li>
+              <li><strong>上下文：</strong>只提供完成任务所需的事实、术语、样例和数据，并标明哪些内容可信、哪些未知。</li>
+              <li><strong>约束：</strong>规定不能做什么、必须遵守什么，以及权限、隐私、事实边界和时间范围。</li>
+              <li><strong>输出契约：</strong>明确字段、顺序、长度、语言、格式和缺失值表达，让下游代码可以稳定读取。</li>
+              <li><strong>评价：</strong>用固定样例检查正确性、完整性、格式、依据、安全性和可恢复性。</li>
+              <li><strong>回退：</strong>当信息不足、工具失败或风险过高时，规定模型应拒答、请求补充、转人工或返回结构化错误。</li>
+            </ol>
+          </section>
+
+          <section aria-labelledby="example-heading">
+            <h2 id="example-heading">一个可复用的提示词骨架</h2>
+            <div class="comparison-content">
+              <div>
+                <h3>任务</h3>
+                <p>你要帮助哪类用户，在什么场景下完成哪一个可观察的动作。</p>
+              </div>
+              <div>
+                <h3>输入</h3>
+                <p>列出可用资料、时间范围、术语定义和未知项；要求模型不要补写不存在的事实。</p>
+              </div>
+              <div>
+                <h3>规则</h3>
+                <p>给出优先级、禁止事项、引用要求、隐私边界与需要人工确认的条件。</p>
+              </div>
+              <div>
+                <h3>输出</h3>
+                <p>指定字段与格式，并写明信息不足时的返回值，例如“证据不足”而不是猜测。</p>
+              </div>
+              <div>
+                <h3>评价</h3>
+                <p>附上合格、失败和边界样例，说明每个样例为什么通过或不通过。</p>
+              </div>
+            </div>
+            <p>
+              同一骨架可以用于文章摘要、需求分类、代码审查、活动问答或项目资料整理。
+              真正需要变化的是任务证据和评价标准，而不是在开头不断叠加“你是一位世界顶级专家”。
             </p>
           </section>
-          <section>
-            <h2>OPC 推荐的四步</h2>
+
+          <section aria-labelledby="evaluation-heading">
+            <h2 id="evaluation-heading">评价集比“感觉不错”更重要</h2>
+            <p>至少准备四类输入，并在更换模型、提示词、数据或工具后重新运行：</p>
             <ul>
-              <li>定义任务：用户到底希望 AI 替他完成什么。</li>
-              <li>约束输出：格式、语气、长度、禁止事项都要清楚。</li>
-              <li>建立评价：用真实样例检查输出是否稳定。</li>
-              <li>持续迭代：把失败案例纳入下一版提示词和产品逻辑。</li>
+              <li><strong>正常样例：</strong>代表最常见用户任务，检查基础价值是否成立。</li>
+              <li><strong>边界样例：</strong>极短、极长、歧义、多语言或格式异常的输入。</li>
+              <li><strong>缺失样例：</strong>故意拿掉关键事实，检查模型是否会承认不知道。</li>
+              <li><strong>对抗样例：</strong>尝试绕过权限、诱导泄露数据、改变角色或生成违规内容。</li>
+            </ul>
+            <p>
+              每条输出都应按同一张评分表检查：任务正确性、事实依据、格式合规、关键信息完整度、风险控制和失败后的可恢复性。
+              如果评价标准无法写清，通常说明产品任务本身还没有定义清楚。
+            </p>
+          </section>
+
+          <section aria-labelledby="failure-heading">
+            <h2 id="failure-heading">五种常见失败，以及真正应该修哪里</h2>
+            <ul>
+              <li><strong>回答漂移：</strong>先检查任务是否同时包含多个目标，再拆成步骤或工作流。</li>
+              <li><strong>格式不稳：</strong>使用明确输出契约并在代码层做 Schema 校验，不要只靠自然语言提醒。</li>
+              <li><strong>事实幻觉：</strong>减少开放式补全，提供可引用来源；需要最新或私有知识时接入检索。</li>
+              <li><strong>计算错误：</strong>把确定性计算交给代码或工具，模型负责解释和编排。</li>
+              <li><strong>权限越界：</strong>在服务端执行身份、数据和操作权限检查，提示词只能说明规则，不能充当安全边界。</li>
             </ul>
           </section>
-          <section>
-            <h2>从提示词走向系统</h2>
+
+          <section aria-labelledby="system-heading">
+            <h2 id="system-heading">从提示词走向系统：什么时候必须升级</h2>
             <p>
-              当一个提示词开始承担稳定业务价值时，就应该把它产品化：接入数据、增加权限、记录日志、设计人工复核流程。这也是社区项目从 Demo 走向真实落地的关键一步。
+              当一个提示词开始承担稳定业务价值时，就应该把它产品化：接入经过授权的数据、增加权限、记录版本和日志、设计人工复核与回滚流程。
+              需要最新或私有知识时使用检索增强；需要确定性计算或外部操作时使用工具；需要多步骤状态时使用工作流；
+              只有在任务稳定、样本充足且提示词与检索仍无法满足时，再评估微调。
             </p>
+            <p>
+              这也是社区项目从 Demo 走向真实落地的关键：不是把一条 Prompt 写得越来越长，
+              而是让每一类能力、证据和责任落到正确的系统组件上。
+            </p>
+          </section>
+
+          <section aria-labelledby="checklist-heading">
+            <h2 id="checklist-heading">发布前检查清单</h2>
+            <ul>
+              <li>任务、用户和成功条件是否可观察？</li>
+              <li>输入来源、时间范围和未知项是否明确？</li>
+              <li>输出是否有稳定格式和缺失值规则？</li>
+              <li>是否测试正常、边界、缺失和对抗输入？</li>
+              <li>事实、计算、权限和外部操作是否交给合适组件？</li>
+              <li>失败时是否能拒答、补问、转人工或安全回滚？</li>
+              <li>模型、Prompt、评价集和数据版本是否可追踪？</li>
+            </ul>
+          </section>
+
+          <section aria-labelledby="faq-heading">
+            <h2 id="faq-heading">Prompt Engineering 常见问题</h2>
+            <div class="faq-list" id="faq">
+              <details>
+                <summary>什么是 Prompt Engineering？</summary>
+                <p>Prompt Engineering 是把用户目标、必要上下文、行为约束、输出格式和评价标准组织成模型可执行接口的过程。它不仅是写一句提示词，也包括样例、工具、数据、测试和失败回退设计。</p>
+              </details>
+              <details>
+                <summary>提示词是不是越长越好？</summary>
+                <p>不是。长度只有在信息确实帮助模型完成任务时才有价值。重复规则、相互冲突的要求和无关背景会增加歧义；更好的目标是让每段内容都有明确作用。</p>
+              </details>
+              <details>
+                <summary>系统提示词和用户提示词有什么区别？</summary>
+                <p>系统提示词通常承载稳定角色、全局规则和安全边界，用户提示词承载本次任务与输入。产品还应在代码层验证权限和输出，不能只依赖提示词保证安全。</p>
+              </details>
+              <details>
+                <summary>如何判断一条提示词是否稳定？</summary>
+                <p>建立覆盖正常输入、边界输入、缺失信息和对抗输入的评价集，重复运行并检查正确性、完整性、格式、事实依据、安全性和失败可恢复性，而不是只挑一条漂亮结果。</p>
+              </details>
+              <details>
+                <summary>什么时候应该从提示词升级到检索、工具或微调？</summary>
+                <p>当任务需要最新或私有知识、确定性计算、外部操作、严格权限或稳定领域行为时，应分别考虑检索增强、工具调用、工作流和微调；不要继续用更长提示词掩盖系统能力缺口。</p>
+              </details>
+            </div>
           </section>
         </article>
 
@@ -214,9 +397,20 @@
             <dl>
               <div><dt>分类</dt><dd>AI 实践</dd></div>
               <div><dt>发布</dt><dd>2026-06-12</dd></div>
-              <div><dt>更新</dt><dd>2026-07-14</dd></div>
+              <div><dt>更新</dt><dd>2026-07-15</dd></div>
             </dl>
           </section>
+          <nav class="related-links" aria-label="本页目录">
+            <h2>本页目录</h2>
+            <a href="#answer-heading">直接答案</a>
+            <a href="#framework-heading">六步框架</a>
+            <a href="#example-heading">提示词骨架</a>
+            <a href="#evaluation-heading">评价集</a>
+            <a href="#failure-heading">常见失败</a>
+            <a href="#system-heading">系统升级</a>
+            <a href="#checklist-heading">发布清单</a>
+            <a href="#faq-heading">常见问题</a>
+          </nav>
           <nav class="related-links" aria-label="相关阅读">
             <h2>相关阅读</h2>
             <a href="./">查看全部实践文章</a>

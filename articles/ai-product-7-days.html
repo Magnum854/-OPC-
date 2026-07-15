@@ -52,6 +52,43 @@
         "@context": "https://schema.org",
         "@graph": [
           {
+            "@type": "Organization",
+            "@id": "https://szu-opc.pages.dev/#organization",
+            "name": "深大 OPC 社区",
+            "alternateName": ["深大OPC", "深大OPC社区", "深圳大学 OPC 社区", "深圳大学OPC社区", "深圳大学 OPC", "深圳大学OPC", "SZU OPC Community"],
+            "url": "https://szu-opc.pages.dev/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://szu-opc.pages.dev/LOGO.jpg",
+              "width": 640,
+              "height": 640
+            },
+            "description": "面向深圳大学学生、教师与研究者、校友及合作伙伴的 One Person Company、Vibe Coding 与 AI 项目实践社区。",
+            "disambiguatingDescription": "深大 OPC 社区的信息入口；不是深圳大学门户网站，不依据名称主张校方授权、主办、指导或组织隶属。"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://szu-opc.pages.dev/#website",
+            "url": "https://szu-opc.pages.dev/",
+            "name": "深大 OPC 社区",
+            "publisher": { "@id": "https://szu-opc.pages.dev/#organization" },
+            "inLanguage": "zh-CN"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://szu-opc.pages.dev/articles/ai-product-7-days",
+            "url": "https://szu-opc.pages.dev/articles/ai-product-7-days",
+            "name": "7 天 AI 产品实践指南：从需求验证到演示",
+            "description": "面向校园团队的 7 天 AI 产品实践框架，覆盖需求判断、功能取舍、协作验证与演示。",
+            "isPartOf": { "@id": "https://szu-opc.pages.dev/#website" },
+            "about": { "@id": "https://szu-opc.pages.dev/#organization" },
+            "mainEntity": { "@id": "https://szu-opc.pages.dev/articles/ai-product-7-days#article" },
+            "breadcrumb": { "@id": "https://szu-opc.pages.dev/articles/ai-product-7-days#breadcrumb" },
+            "datePublished": "2026-06-12",
+            "dateModified": "2026-07-14",
+            "inLanguage": "zh-CN"
+          },
+          {
             "@type": "Article",
             "@id": "https://szu-opc.pages.dev/articles/ai-product-7-days#article",
             "headline": "7 天 AI 产品实践指南：从需求验证到演示",
@@ -60,34 +97,16 @@
             "inLanguage": "zh-CN",
             "datePublished": "2026-06-12",
             "dateModified": "2026-07-14",
-            "mainEntityOfPage": {
-              "@type": "WebPage",
-              "@id": "https://szu-opc.pages.dev/articles/ai-product-7-days"
-            },
+            "mainEntityOfPage": { "@id": "https://szu-opc.pages.dev/articles/ai-product-7-days" },
+            "isPartOf": { "@id": "https://szu-opc.pages.dev/#website" },
             "image": {
               "@type": "ImageObject",
               "url": "https://szu-opc.pages.dev/LOGO.jpg",
               "width": 640,
               "height": 640
             },
-            "author": {
-              "@type": "Organization",
-              "@id": "https://szu-opc.pages.dev/#organization",
-              "name": "深大 OPC 社区",
-              "url": "https://szu-opc.pages.dev/"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "@id": "https://szu-opc.pages.dev/#organization",
-              "name": "深大 OPC 社区",
-              "url": "https://szu-opc.pages.dev/",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://szu-opc.pages.dev/LOGO.jpg",
-                "width": 640,
-                "height": 640
-              }
-            }
+            "author": { "@id": "https://szu-opc.pages.dev/#organization" },
+            "publisher": { "@id": "https://szu-opc.pages.dev/#organization" }
           },
           {
             "@type": "BreadcrumbList",

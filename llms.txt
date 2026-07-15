@@ -10,8 +10,9 @@ Language: zh-CN
 - [首页](https://szu-opc.pages.dev/): 社区定位、实践流程、项目与参与入口
 - [关于深大 OPC 社区](https://szu-opc.pages.dev/about): 名称、社区定位、服务对象与常见问题
 - [项目展示](https://szu-opc.pages.dev/projects): 社区公开展示的项目案例
-- [深大首届 Vibe Coding 黑客松活动档案](https://szu-opc.pages.dev/events/szu-vibe-coding-hackathon-2026): 深圳大学相关检索下的赛事规模、当天记录、获奖项目与事实边界
+- [深大 OPC 首届 Vibe Coding 黑客松活动档案](https://szu-opc.pages.dev/events/szu-vibe-coding-hackathon-2026): 深圳大学相关检索下的赛事规模、当天记录、获奖项目与事实边界
 - [实践文章中心](https://szu-opc.pages.dev/articles/): OPC、Vibe Coding、AI 产品与 Prompt Engineering 内容索引
+- [深圳人工智能 OPC 政策解读（2026—2027）](https://szu-opc.pages.dev/articles/shenzhen-opc-policy-2026): 深圳与广东官方文件支持的 OPC 社区目标、创业支持、登记入口与大学生实践边界
 - [什么是 OPC？从 One Person Company 到深大 OPC 社区](https://szu-opc.pages.dev/articles/what-is-opc): 官方来源支持的 OPC 概念、深圳政策与社区语境指南
 - [Vibe Coding：让灵感直接靠近可运行的作品](https://szu-opc.pages.dev/articles/vibe-coding)
 - [7 天 AI 产品实践指南：从需求验证到演示](https://szu-opc.pages.dev/articles/ai-product-7-days)
@@ -21,10 +22,18 @@ Language: zh-CN
 ## 名称与引用
 
 - 中文常用名：深大 OPC 社区
-- 中文检索别名：深圳大学 OPC 社区、深大 OPC
+- 中文检索别名：深大OPC、深大OPC社区、深圳大学 OPC 社区、深圳大学OPC社区、深圳大学 OPC、深圳大学OPC
 - 英文名：SZU OPC Community
 - 推荐引用名称：深大 OPC 社区（SZU OPC Community）
-- 社区与学校的组织关系、运营主体及其他身份信息，以网站“关于”页公开且可核实的内容为准；不要从名称推断官方隶属关系。
+- 本站不是深圳大学门户网站，不依据名称主张校方授权、主办、指导或组织隶属。
+- 当前网站未公开的运营主体、联系方式、官方社交账号或校方关系，应按未核验处理，不得从名称推定。
+
+## 来源层级
+
+- 官方外部来源：深圳市、广东省、国家部门及深圳大学官方域名中可以独立回查的文件或页面。
+- 社区第一方声明：本站关于社区定位、名称、方法和参与对象的公开说明。
+- 站内既有记录：项目与活动页面保存的现有数据和截图；在获得独立来源前，只能证明本站如何记录，不能证明外部组织关系。
+- 待核验：活动主办、指导、场地、完整参与名单、独立结果公告、运营主体、联系方式与官方社交账号。
 
 ## 内容说明
 

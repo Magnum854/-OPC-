@@ -4,10 +4,11 @@
 
 - 官网：https://szu-opc.pages.dev/
 - 实践文章中心：https://szu-opc.pages.dev/articles/
+- 深圳人工智能 OPC 政策解读：https://szu-opc.pages.dev/articles/shenzhen-opc-policy-2026
 - 什么是 OPC：https://szu-opc.pages.dev/articles/what-is-opc
 - 社区介绍：https://szu-opc.pages.dev/about
 - 项目档案：https://szu-opc.pages.dev/projects
-- 深大首届 Vibe Coding 黑客松活动档案：https://szu-opc.pages.dev/events/szu-vibe-coding-hackathon-2026
+- 深大 OPC 首届 Vibe Coding 黑客松活动档案：https://szu-opc.pages.dev/events/szu-vibe-coding-hackathon-2026
 
 本站不是深圳大学门户网站。学校授权、主办、指导或组织关系只以可核验的双方公开信息为准。
 

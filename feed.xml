@@ -5,10 +5,17 @@
     <link>https://szu-opc.pages.dev/</link>
     <description>深大 OPC 社区关于 One Person Company、Vibe Coding、AI 应用、项目与活动档案的公开内容更新。</description>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 14 Jul 2026 00:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 15 Jul 2026 00:00:00 +0800</lastBuildDate>
     <atom:link href="https://szu-opc.pages.dev/feed.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>深大首届 Vibe Coding 黑客松活动档案｜18+ 队伍与获奖项目</title>
+      <title>深圳人工智能 OPC 政策解读（2026—2027）｜一人公司、OPC 社区与大学生实践</title>
+      <link>https://szu-opc.pages.dev/articles/shenzhen-opc-policy-2026</link>
+      <guid isPermaLink="true">https://szu-opc.pages.dev/articles/shenzhen-opc-policy-2026</guid>
+      <pubDate>Wed, 15 Jul 2026 00:00:00 +0800</pubDate>
+      <description>基于深圳市和广东省官方文件，梳理 OPC 社区目标、创业支持、登记入口与大学生实践边界。</description>
+    </item>
+    <item>
+      <title>深大 OPC 首届 Vibe Coding 黑客松活动档案｜18+ 队伍与获奖项目</title>
       <link>https://szu-opc.pages.dev/events/szu-vibe-coding-hackathon-2026</link>
       <guid isPermaLink="true">https://szu-opc.pages.dev/events/szu-vibe-coding-hackathon-2026</guid>
       <pubDate>Tue, 14 Jul 2026 00:00:00 +0800</pubDate>

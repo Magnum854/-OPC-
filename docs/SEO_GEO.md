@@ -18,6 +18,7 @@ https://szu-opc.pages.dev/
 /projects
 /events/szu-vibe-coding-hackathon-2026
 /articles/
+/articles/shenzhen-opc-policy-2026
 /articles/what-is-opc
 /articles/vibe-coding
 /articles/ai-product-7-days
