@@ -611,6 +611,25 @@ svg {
   line-height: 1.8;
 }
 
+.route-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.route-grid article {
+  display: flex;
+  flex-direction: column;
+}
+
+.route-grid a {
+  margin-top: auto;
+  padding-top: 28px;
+  color: #b63a13;
+  font: 750 12px/1.4 var(--mono);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
 .flow-section {
   color: var(--white);
   background: var(--black);
@@ -951,6 +970,7 @@ svg {
   overflow: hidden;
   aspect-ratio: 16 / 9;
   min-height: 0;
+  margin: 0;
 }
 
 .project-visual span {
@@ -996,6 +1016,11 @@ svg {
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 8px;
+}
+
+.article-index-panel {
+  background: var(--black);
+  box-shadow: 0 30px 90px rgba(5, 5, 5, 0.14);
 }
 
 .panel-heading {
@@ -1414,7 +1439,7 @@ svg {
   letter-spacing: 0.12em;
 }
 
-.subpage-hero-copy > p:not(.hero-eyebrow) {
+.subpage-hero-copy > p:not(.hero-eyebrow):not(.article-category):not(.article-meta) {
   max-width: 790px;
   margin: 28px 0 0;
   color: rgba(255, 255, 255, 0.7);
@@ -2227,6 +2252,10 @@ dialog::backdrop {
 
   .audience-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .route-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 

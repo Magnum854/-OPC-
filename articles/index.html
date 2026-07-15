@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="深大 OPC 社区实践文章与指南，集中收录 One Person Company、Vibe Coding、AI 产品实践、Prompt Engineering 与校园科创内容。"
+    />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <meta name="author" content="深大 OPC 社区" />
+    <title>深大 OPC 实践文章｜One Person Company、Vibe Coding 与 AI 项目</title>
+    <link rel="canonical" href="https://szu-opc.pages.dev/articles/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://szu-opc.pages.dev/articles/" />
+    <link rel="alternate" hreflang="x-default" href="https://szu-opc.pages.dev/articles/" />
+    <link rel="icon" href="../LOGO.jpg" type="image/jpeg" />
+    <link rel="manifest" href="../manifest.webmanifest" />
+    <link rel="alternate" type="application/rss+xml" title="深大 OPC 社区文章" href="../feed.xml" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta property="og:site_name" content="深大 OPC 社区" />
+    <meta property="og:title" content="深大 OPC 实践文章｜One Person Company、Vibe Coding 与 AI 项目" />
+    <meta
+      property="og:description"
+      content="从 OPC 概念、Vibe Coding 方法到 AI 产品实践，按主题浏览深大 OPC 社区的可引用内容。"
+    />
+    <meta property="og:url" content="https://szu-opc.pages.dev/articles/" />
+    <meta property="og:image" content="https://szu-opc.pages.dev/LOGO.jpg" />
+    <meta property="og:image:width" content="640" />
+    <meta property="og:image:height" content="640" />
+    <meta property="og:image:alt" content="深大 OPC 社区品牌标识" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="深大 OPC 实践文章与指南" />
+    <meta
+      name="twitter:description"
+      content="One Person Company、Vibe Coding、AI 产品实践与 Prompt Engineering 的深大 OPC 内容中心。"
+    />
+    <meta name="twitter:image" content="https://szu-opc.pages.dev/LOGO.jpg" />
+    <meta name="twitter:image:alt" content="深大 OPC 社区品牌标识" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://szu-opc.pages.dev/#organization",
+            "name": "深大 OPC 社区",
+            "alternateName": ["深圳大学 OPC 社区", "深大 OPC", "SZU OPC Community"],
+            "url": "https://szu-opc.pages.dev/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://szu-opc.pages.dev/LOGO.jpg",
+              "width": 640,
+              "height": 640
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://szu-opc.pages.dev/#website",
+            "url": "https://szu-opc.pages.dev/",
+            "name": "深大 OPC 社区",
+            "publisher": { "@id": "https://szu-opc.pages.dev/#organization" },
+            "inLanguage": "zh-CN"
+          },
+          {
+            "@type": "CollectionPage",
+            "@id": "https://szu-opc.pages.dev/articles/#webpage",
+            "url": "https://szu-opc.pages.dev/articles/",
+            "name": "深大 OPC 实践文章｜One Person Company、Vibe Coding 与 AI 项目",
+            "description": "深大 OPC 社区关于 OPC 概念、Vibe Coding、AI 产品和 Prompt Engineering 的文章索引。",
+            "isPartOf": { "@id": "https://szu-opc.pages.dev/#website" },
+            "about": { "@id": "https://szu-opc.pages.dev/#organization" },
+            "mainEntity": { "@id": "https://szu-opc.pages.dev/articles/#article-list" },
+            "breadcrumb": { "@id": "https://szu-opc.pages.dev/articles/#breadcrumb" },
+            "dateModified": "2026-07-14",
+            "inLanguage": "zh-CN"
+          },
+          {
+            "@type": "ItemList",
+            "@id": "https://szu-opc.pages.dev/articles/#article-list",
+            "name": "深大 OPC 社区公开文章",
+            "numberOfItems": 4,
+            "itemListOrder": "https://schema.org/ItemListOrderDescending",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "url": "https://szu-opc.pages.dev/articles/what-is-opc",
+                "name": "什么是 OPC？从 One Person Company 到深大 OPC 社区"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "url": "https://szu-opc.pages.dev/articles/vibe-coding",
+                "name": "Vibe Coding：让灵感直接靠近可运行的作品"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "url": "https://szu-opc.pages.dev/articles/ai-product-7-days",
+                "name": "7 天 AI 产品实践指南：从需求验证到演示"
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "url": "https://szu-opc.pages.dev/articles/prompt-engineering",
+                "name": "Prompt Engineering 不只是写提示词"
+              }
+            ]
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://szu-opc.pages.dev/articles/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "首页",
+                "item": "https://szu-opc.pages.dev/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "实践文章",
+                "item": "https://szu-opc.pages.dev/articles/"
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">跳到主要内容</a>
+
+    <header class="site-header subpage-header" data-elevated="false">
+      <a class="brand" href="../" aria-label="返回深大 OPC 社区首页">
+        <img src="../LOGO.jpg" alt="深大 OPC 社区 Logo" width="640" height="640" loading="eager" decoding="async" />
+        <span>
+          <strong>深大 OPC 社区</strong>
+          <small>SZU OPC Community</small>
+        </span>
+      </a>
+      <nav class="desktop-nav" aria-label="主导航">
+        <a href="../">首页</a>
+        <a href="../about">关于</a>
+        <a href="../projects">项目</a>
+        <a href="./" aria-current="page">文章</a>
+        <a href="../events/szu-vibe-coding-hackathon-2026">活动</a>
+        <a href="../#join">加入我们</a>
+      </nav>
+      <div class="header-actions">
+        <a class="ghost-button" href="../feed.xml">RSS</a>
+        <a class="solid-button" href="../#join">参与共创</a>
+        <button class="menu-button" type="button" aria-label="打开菜单" data-menu-button>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <aside class="mobile-panel" aria-hidden="true" data-mobile-panel>
+      <a href="../">首页</a>
+      <a href="../about">关于深大 OPC</a>
+      <a href="../projects">项目展示</a>
+      <a href="./" aria-current="page">实践文章</a>
+      <a href="../events/szu-vibe-coding-hackathon-2026">活动档案</a>
+      <a href="../#join">加入我们</a>
+    </aside>
+
+    <main class="subpage-main" id="main-content">
+      <section class="subpage-hero section-dark">
+        <div class="content-shell">
+          <nav class="breadcrumb" aria-label="面包屑导航">
+            <a href="../">首页</a>
+            <span aria-hidden="true">/</span>
+            <span aria-current="page">实践文章</span>
+          </nav>
+
+          <div class="subpage-hero-grid">
+            <div class="subpage-hero-copy reveal">
+              <p class="hero-eyebrow">OPC LAB NOTES / KNOWLEDGE INDEX</p>
+              <h1>
+                <span class="subpage-title-label">深大 OPC 实践文章与指南</span>
+                不只记录答案，<br />也公开如何走到答案。
+              </h1>
+              <p>
+                这里集中收录深大 OPC 社区关于 One Person Company、Vibe Coding、AI 产品和 Prompt Engineering 的公开内容。
+                每篇文章都有独立 URL、发布日期与可核验边界，方便读者继续实践，也方便搜索与 AI 系统准确引用。
+              </p>
+              <div class="hero-actions">
+                <a class="primary-cta" href="#article-list">浏览全部文章 <span aria-hidden="true">↓</span></a>
+                <a class="secondary-cta" href="../feed.xml">订阅 RSS</a>
+              </div>
+            </div>
+
+            <dl class="hero-stats fact-grid reveal" aria-label="内容中心数据">
+              <div><dt>04</dt><dd>公开文章</dd></div>
+              <div><dt>03</dt><dd>实践方法</dd></div>
+              <div><dt>01</dt><dd>OPC 支柱指南</dd></div>
+              <div><dt>2026</dt><dd>当前档案年份</dd></div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="section content-shell" id="article-list" aria-labelledby="article-list-heading">
+        <div class="section-heading reveal">
+          <span class="section-number">01</span>
+          <h2 id="article-list-heading">按问题进入，而不是按关键词堆砌</h2>
+          <p>先辨析 OPC，再学习 Vibe Coding、产品验证与提示词工程；每个页面只承担一个主要搜索意图。</p>
+        </div>
+
+        <div class="posts-panel article-index-panel reveal">
+          <div class="panel-heading">
+            <div>
+              <span class="section-number">INDEX</span>
+              <h2>全部公开文章</h2>
+            </div>
+            <span class="panel-label">4 ARTICLES / VERIFIED ROUTES</span>
+          </div>
+          <div class="post-list">
+            <article>
+              <a class="post-card" href="./what-is-opc">
+                <img src="../LOGO.jpg" alt="什么是 OPC 概念指南封面" width="640" height="640" loading="lazy" decoding="async" />
+                <div>
+                  <small>OPC 概念 / 支柱指南</small>
+                  <h3>什么是 OPC？从 One Person Company 到深大 OPC 社区</h3>
+                  <p>结合深圳官方定义，区分 AI 创业、工商法律、工业协议与校园实践语境。</p>
+                </div>
+                <span class="post-detail-link">概念入口</span>
+              </a>
+            </article>
+            <article>
+              <a class="post-card" href="./vibe-coding">
+                <img src="../assets/project-justice.png" alt="Vibe Coding 实践文章配图" width="1080" height="608" loading="lazy" decoding="async" />
+                <div>
+                  <small>开发方法 / 原型验证</small>
+                  <h3>Vibe Coding：让灵感直接靠近可运行的作品</h3>
+                  <p>从工具链、提问方式、最小可行产品到复盘方法，整理社区实践经验。</p>
+                </div>
+                <span class="post-detail-link">方法指南</span>
+              </a>
+            </article>
+            <article>
+              <a class="post-card" href="./ai-product-7-days">
+                <img src="../assets/project-hackathon-overview.png" alt="7 天 AI 产品实践指南配图" width="1080" height="611" loading="lazy" decoding="async" />
+                <div>
+                  <small>实践指南 / AI 产品</small>
+                  <h3>7 天 AI 产品实践指南：从需求验证到演示</h3>
+                  <p>一份面向校园团队的方法模板，覆盖问题判断、功能取舍、协作验证与演示。</p>
+                </div>
+                <span class="post-detail-link">实践指南</span>
+              </a>
+            </article>
+            <article>
+              <a class="post-card" href="./prompt-engineering">
+                <img src="../assets/project-rss.png" alt="Prompt Engineering 实践文章配图" width="1080" height="571" loading="lazy" decoding="async" />
+                <div>
+                  <small>AI 实践 / 评价迭代</small>
+                  <h3>Prompt Engineering 不只是写提示词</h3>
+                  <p>把提示词放回产品流程，理解约束、评价标准、失败样例与持续迭代。</p>
+                </div>
+                <span class="post-detail-link">实践方法</span>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section content-shell" aria-labelledby="route-heading">
+        <div class="section-heading reveal">
+          <span class="section-number">02</span>
+          <h2 id="route-heading">四条阅读路线</h2>
+          <p>同一个内容中心服务不同读者：第一次认识 OPC、准备动手、正在做产品，或需要核验社区事实。</p>
+        </div>
+        <div class="meaning-grid route-grid reveal">
+          <article>
+            <span>01</span>
+            <h3>先弄懂 OPC</h3>
+            <p>从 One Person Company 的直接定义开始，理解它与法律主体、工业 OPC 和深圳政策语境的区别。</p>
+            <a href="./what-is-opc">进入概念指南 →</a>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>把想法做出来</h3>
+            <p>用 Vibe Coding 缩短自然语言、代码、调试与可运行原型之间的距离，同时保留测试和责任。</p>
+            <a href="./vibe-coding">进入方法文章 →</a>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>把作品做对</h3>
+            <p>回到用户、场景、反馈与演示，理解一个 AI 产品如何从最小版本走向可观察的验证结果。</p>
+            <a href="./ai-product-7-days">进入实践指南 →</a>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>把交互做稳</h3>
+            <p>用约束、评价标准与失败样例组织 Prompt，而不是依赖一次偶然得到的漂亮回答。</p>
+            <a href="./prompt-engineering">进入 Prompt 指南 →</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section content-shell subpage-cta" aria-labelledby="evidence-heading">
+        <div class="editorial-content reveal">
+          <span class="section-number">NEXT</span>
+          <h2 id="evidence-heading">从文章回到真实作品</h2>
+          <p>
+            方法只有落到作品才有意义。继续查看<a href="../projects">现有项目</a>与<a href="../events/szu-vibe-coding-hackathon-2026">活动档案</a>，核验社区目前公开的项目名称、场景、得分、奖项与日期；
+            暂未公开的组织关系和成果不会在文章中补写。
+          </p>
+          <div class="hero-actions">
+            <a class="primary-cta" href="../projects">查看项目档案 <span aria-hidden="true">→</span></a>
+            <a class="secondary-cta" href="../about">核验社区身份</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="../" aria-label="返回深大 OPC 社区首页">
+        <img src="../LOGO.jpg" alt="深大 OPC 社区 Logo" width="640" height="640" loading="lazy" decoding="async" />
+        <span>
+          <strong>深大 OPC 社区</strong>
+          <small>SZU OPC Community</small>
+        </span>
+      </a>
+      <p>
+        让你的每一个想法，都值得被看见；让实践过程也成为可以继续复用的公共内容。<br />
+        <small>内容索引更新 <time datetime="2026-07-14">2026-07-14</time></small>
+      </p>
+      <div class="footer-links">
+        <a href="../">首页</a>
+        <a href="../about">关于我们</a>
+        <a href="../projects">项目档案</a>
+        <a href="./" aria-current="page">实践文章</a>
+        <a href="https://github.com/Magnum854/-OPC-" rel="external">GitHub 源码</a>
+      </div>
+    </footer>
+    <script src="../script.js"></script>
+  </body>
+</html>

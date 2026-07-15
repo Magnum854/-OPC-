@@ -16,6 +16,8 @@ https://szu-opc.pages.dev/
 /
 /about
 /projects
+/events/szu-vibe-coding-hackathon-2026
+/articles/
 /articles/what-is-opc
 /articles/vibe-coding
 /articles/ai-product-7-days
@@ -65,7 +67,7 @@ Cloudflare Pages 会把 `.html` 地址重定向到无扩展名地址，因此公
 
 ## 结构化数据
 
-首页可使用 `Organization`、`WebSite` 和 `WebPage`。独立文章页可使用 `Article`，真实活动页可使用 `Event`。字段必须来自页面可见、可核实的信息。
+首页可使用 `Organization`、`WebSite` 和 `WebPage`。独立文章页可使用 `Article`。只有日期、地点、主办方等关键字段可核验的真实活动页才使用 `Event`；资料不完整的历史档案可使用 `WebPage`、`Article`、`ItemList` 和可见 FAQ。字段必须来自页面可见、可核实的信息。
 
 至少保持以下字段一致：
 

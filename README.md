@@ -1,6 +1,15 @@
 # 深大 OPC 社区官网
 
-深大 OPC 社区官网是一个纯静态站点，面向 Vibe Coding、AI 应用与真实项目落地的校园科创社区。
+深大 OPC 社区（也称深圳大学 OPC 社区、深大 OPC，英文名 SZU OPC Community）官网是一个纯静态站点，面向 Vibe Coding、AI 应用与真实项目落地的校园科创社区。
+
+- 官网：https://szu-opc.pages.dev/
+- 实践文章中心：https://szu-opc.pages.dev/articles/
+- 什么是 OPC：https://szu-opc.pages.dev/articles/what-is-opc
+- 社区介绍：https://szu-opc.pages.dev/about
+- 项目档案：https://szu-opc.pages.dev/projects
+- 深大首届 Vibe Coding 黑客松活动档案：https://szu-opc.pages.dev/events/szu-vibe-coding-hackathon-2026
+
+本站不是深圳大学门户网站。学校授权、主办、指导或组织关系只以可核验的双方公开信息为准。
 
 当前 slogan：
 
@@ -13,8 +22,9 @@
 ```text
 index.html    页面结构与主要文案
 about.html    可索引的社区实体与定位页面
-projects.html 可索引的项目与活动档案
-articles/     可索引的 OPC Lab Notes 文章页
+projects.html 可索引的项目档案
+articles/     文章中心与可索引的 OPC Lab Notes 文章页
+events/       可索引的活动档案页
 styles.css    视觉样式与响应式布局
 script.js     看板数据、弹窗、交互与动画
 LOGO.jpg      官网 Logo 与展示图片
@@ -40,10 +50,12 @@ llms.txt      AI 工具可选的站点导航补充
 3. 提交并推送到 GitHub
 
 ```powershell
-git add .
+git add -- index.html about.html projects.html articles events styles.css script.js sitemap.xml feed.xml llms.txt docs README.md
 git commit -m "Update website"
 git push
 ```
+
+该命令只覆盖站点与文档路径，不会把根目录中的临时素材一并加入提交；提交前仍应运行 `git status --short` 核对范围。
 
 如果 Cloudflare Pages 已绑定 GitHub 仓库和 `main` 分支，`git push` 后会自动重新部署。
 

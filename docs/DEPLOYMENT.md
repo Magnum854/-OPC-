@@ -8,10 +8,12 @@ Use GitHub as the source of truth. After local edits:
 
 ```powershell
 cd "X:\vibe coding\13 深大OPC官网"
-git add .
+git add -- index.html about.html projects.html articles events styles.css script.js sitemap.xml feed.xml llms.txt docs README.md
 git commit -m "Update website"
 git push
 ```
+
+Run `git status --short` before committing. Keep temporary source materials and requirement documents outside the staged path set.
 
 Cloudflare Pages will automatically deploy pushed changes when the project is connected to the GitHub repository and the production branch is `main`.
 
@@ -79,6 +81,8 @@ The Sitemap currently expects these HTML pages to exist:
 /
 /about
 /projects
+/events/szu-vibe-coding-hackathon-2026
+/articles/
 /articles/what-is-opc
 /articles/vibe-coding
 /articles/ai-product-7-days

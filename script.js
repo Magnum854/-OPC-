@@ -221,16 +221,30 @@ if (composerForm && composerStatus) {
 }
 
 if (menuButton && mobilePanel) {
+  if (!mobilePanel.id) mobilePanel.id = "mobile-navigation";
+  menuButton.setAttribute("aria-controls", mobilePanel.id);
+  menuButton.setAttribute("aria-expanded", "false");
+
+  function setMobileMenuState(open) {
+    mobilePanel.classList.toggle("open", open);
+    mobilePanel.setAttribute("aria-hidden", String(!open));
+    menuButton.setAttribute("aria-expanded", String(open));
+  }
+
   menuButton.addEventListener("click", () => {
-    const isOpen = mobilePanel.classList.toggle("open");
-    mobilePanel.setAttribute("aria-hidden", String(!isOpen));
+    setMobileMenuState(!mobilePanel.classList.contains("open"));
   });
 
   mobilePanel.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", () => {
-      mobilePanel.classList.remove("open");
-      mobilePanel.setAttribute("aria-hidden", "true");
+      setMobileMenuState(false);
     });
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape" || !mobilePanel.classList.contains("open")) return;
+    setMobileMenuState(false);
+    menuButton.focus();
   });
 }
 
@@ -328,13 +342,19 @@ if (canvas && !prefersReducedMotion) {
   let height = 0;
   let points = [];
   let mouse = { x: 0, y: 0, active: false };
+  let animationFrameId = null;
+  let resizeTimer = null;
+  let isCanvasVisible = false;
+  let lastFrameTime = 0;
+  const isCoarsePointer = window.matchMedia("(pointer: coarse)").matches;
+  const frameInterval = isCoarsePointer ? 1000 / 30 : 0;
 
   function resizeCanvas() {
-    const ratio = window.devicePixelRatio || 1;
+    const ratio = Math.min(window.devicePixelRatio || 1, 1.5);
     width = canvas.clientWidth;
     height = canvas.clientHeight;
-    canvas.width = width * ratio;
-    canvas.height = height * ratio;
+    canvas.width = Math.round(width * ratio);
+    canvas.height = Math.round(height * ratio);
     ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
     points = Array.from({ length: Math.max(34, Math.floor(width / 34)) }, (_, index) => ({
       x: (index * 97) % width,
@@ -345,7 +365,7 @@ if (canvas && !prefersReducedMotion) {
     }));
   }
 
-  function draw() {
+  function drawFrame() {
     ctx.clearRect(0, 0, width, height);
     points.forEach((point, index) => {
       point.x += point.vx;
@@ -387,7 +407,42 @@ if (canvas && !prefersReducedMotion) {
       ctx.fill();
     });
 
-    requestAnimationFrame(draw);
+  }
+
+  function shouldAnimate() {
+    return isCanvasVisible && !document.hidden;
+  }
+
+  function animate(timestamp) {
+    animationFrameId = null;
+    if (!shouldAnimate()) return;
+
+    if (!frameInterval || timestamp - lastFrameTime >= frameInterval) {
+      drawFrame();
+      lastFrameTime = timestamp;
+    }
+
+    animationFrameId = requestAnimationFrame(animate);
+  }
+
+  function startAnimation() {
+    if (animationFrameId !== null || !shouldAnimate()) return;
+    lastFrameTime = performance.now();
+    animationFrameId = requestAnimationFrame(animate);
+  }
+
+  function stopAnimation() {
+    if (animationFrameId === null) return;
+    cancelAnimationFrame(animationFrameId);
+    animationFrameId = null;
+  }
+
+  function updateAnimationState() {
+    if (shouldAnimate()) {
+      startAnimation();
+    } else {
+      stopAnimation();
+    }
   }
 
   canvas.addEventListener("mousemove", (event) => {
@@ -403,9 +458,24 @@ if (canvas && !prefersReducedMotion) {
     mouse.active = false;
   });
 
-  window.addEventListener("resize", resizeCanvas);
+  const canvasObserver = new IntersectionObserver((entries) => {
+    isCanvasVisible = entries[entries.length - 1].isIntersecting;
+    updateAnimationState();
+  });
+
+  canvasObserver.observe(canvas);
+  document.addEventListener("visibilitychange", updateAnimationState);
+  window.addEventListener("pagehide", stopAnimation);
+  window.addEventListener("pageshow", updateAnimationState);
+  window.addEventListener("resize", () => {
+    window.clearTimeout(resizeTimer);
+    resizeTimer = window.setTimeout(() => {
+      resizeCanvas();
+      if (!shouldAnimate()) drawFrame();
+    }, 120);
+  });
   resizeCanvas();
-  draw();
+  drawFrame();
 }
 
 renderDemands();

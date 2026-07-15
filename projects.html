@@ -8,9 +8,9 @@
     <meta name="theme-color" content="#050505" />
     <meta
       name="description"
-      content="深大 OPC 社区项目档案，集中展示深圳大学首届 Vibe Coding 黑客松现有四个项目、18+ 参赛队伍、13+ 提交作品、8+ 专业覆盖、72 小时实践数据与 2026 年 6 月 14 日活动记录。"
+      content="深大 OPC 社区项目档案，集中展示校园 AI 项目与 Vibe Coding 作品，包括正义必胜队、哈基米南北绿豆、关爱猫猫队与小药通的公开场景、得分和奖项。"
     />
-    <title>深大 OPC 项目档案｜深圳大学首届 Vibe Coding 黑客松作品与活动</title>
+    <title>深大 OPC 项目档案｜校园 AI 项目与 Vibe Coding 作品</title>
     <link rel="canonical" href="https://szu-opc.pages.dev/projects" />
     <link rel="alternate" hreflang="zh-CN" href="https://szu-opc.pages.dev/projects" />
     <link rel="alternate" hreflang="x-default" href="https://szu-opc.pages.dev/projects" />
@@ -21,10 +21,10 @@
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="zh_CN" />
     <meta property="og:site_name" content="深大 OPC 社区" />
-    <meta property="og:title" content="深大 OPC 项目档案｜深圳大学首届 Vibe Coding 黑客松作品与活动" />
+    <meta property="og:title" content="深大 OPC 项目档案｜校园 AI 项目与 Vibe Coding 作品" />
     <meta
       property="og:description"
-      content="查看首届 Vibe Coding 黑客松的现有四个项目、赛事数据与 2026 年 6 月 14 日活动档案。"
+      content="查看深大 OPC 社区现有校园 AI 项目、Vibe Coding 作品及其可核验的场景、得分与奖项。"
     />
     <meta property="og:url" content="https://szu-opc.pages.dev/projects" />
     <meta property="og:image" content="https://szu-opc.pages.dev/assets/project-hackathon-overview.png" />
@@ -33,10 +33,10 @@
     <meta property="og:image:alt" content="深圳大学首届 Vibe Coding 黑客松项目清单截图" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="深大 OPC 项目档案｜首届 Vibe Coding 黑客松" />
+    <meta name="twitter:title" content="深大 OPC 项目档案｜校园 AI 与 Vibe Coding 作品" />
     <meta
       name="twitter:description"
-      content="四个现有项目、18+ 参赛队伍、13+ 提交作品、8+ 专业覆盖与 72 小时实践档案。"
+      content="四个现有校园 AI 项目及其公开场景、得分、奖项与 Vibe Coding 实践记录。"
     />
     <meta name="twitter:image" content="https://szu-opc.pages.dev/assets/project-hackathon-overview.png" />
     <meta name="twitter:image:alt" content="深圳大学首届 Vibe Coding 黑客松项目清单截图" />
@@ -87,8 +87,8 @@
             "@type": "CollectionPage",
             "@id": "https://szu-opc.pages.dev/projects#webpage",
             "url": "https://szu-opc.pages.dev/projects",
-            "name": "深大 OPC 项目档案｜深圳大学首届 Vibe Coding 黑客松作品与活动",
-            "description": "深圳大学首届 Vibe Coding 黑客松现有四个项目、赛事数据与活动档案。",
+            "name": "深大 OPC 项目档案｜校园 AI 项目与 Vibe Coding 作品",
+            "description": "深大 OPC 社区现有校园 AI 项目、Vibe Coding 作品及其公开场景、得分和奖项。",
             "isPartOf": { "@id": "https://szu-opc.pages.dev/#website" },
             "about": { "@id": "https://szu-opc.pages.dev/#organization" },
             "mainEntity": { "@id": "https://szu-opc.pages.dev/projects#project-list" },
@@ -109,7 +109,7 @@
               {
                 "@type": "ListItem",
                 "position": 2,
-                "name": "项目与活动档案",
+                "name": "项目档案",
                 "item": "https://szu-opc.pages.dev/projects"
               }
             ]
@@ -200,13 +200,13 @@
         <a href="./">首页</a>
         <a href="./about">关于</a>
         <a href="./projects" aria-current="page">项目</a>
-        <a href="./#posts">文章</a>
-        <a href="#events">活动</a>
+        <a href="./articles/">文章</a>
+        <a href="./events/szu-vibe-coding-hackathon-2026">活动</a>
         <a href="./#join">加入我们</a>
       </nav>
 
       <div class="header-actions">
-        <a class="ghost-button" href="./#posts">阅读文章</a>
+        <a class="ghost-button" href="./articles/">阅读文章</a>
         <a class="solid-button" href="./#join">参与共创</a>
         <button class="menu-button" type="button" aria-label="打开菜单" data-menu-button>
           <span></span>
@@ -219,8 +219,8 @@
       <a href="./">首页</a>
       <a href="./about">关于 OPC</a>
       <a href="./projects" aria-current="page">项目展示</a>
-      <a href="./#posts">社区文章</a>
-      <a href="#events">活动档案</a>
+      <a href="./articles/">社区文章</a>
+      <a href="./events/szu-vibe-coding-hackathon-2026">活动档案</a>
       <a href="./#join">加入我们</a>
     </aside>
 
@@ -230,7 +230,7 @@
           <nav class="breadcrumb" aria-label="面包屑导航">
             <a href="./">首页</a>
             <span aria-hidden="true">/</span>
-            <span aria-current="page">项目与活动档案</span>
+            <span aria-current="page">项目档案</span>
           </nav>
 
           <div class="subpage-hero-grid">
@@ -241,15 +241,15 @@
                 项目不是一句创意，<br />而是一次可以被看见的验证。
               </h1>
               <p>
-                本页集中呈现深圳大学首届 Vibe Coding 黑客松官网现有的四个项目、赛事数据与活动记录，
-                保留从校园问题到可展示作品的真实切面。
+                本页集中呈现深大 OPC 社区现有的校园 AI 项目与 Vibe Coding 作品，
+                保留从校园问题、可运行原型到公开得分和奖项的真实切面。
               </p>
               <div class="hero-actions">
                 <a class="primary-cta" href="#project-list">
                   浏览四个项目
                   <span aria-hidden="true">↓</span>
                 </a>
-                <a class="secondary-cta" href="./#posts">阅读项目复盘</a>
+                <a class="secondary-cta" href="./articles/">阅读项目复盘</a>
               </div>
             </div>
 
@@ -441,7 +441,8 @@
           <div>
             <small>活动已结束</small>
             <h3>去探索 AI Agent 的黑客松</h3>
-            <p>活动日期为 2026 年 6 月 14 日，时间为 10:00–19:00。本页保留该项活动事实作为档案。</p>
+            <p>活动日期为 2026 年 6 月 14 日，时间为 10:00–19:00；完整赛事数据、项目名次与事实边界另见独立活动档案。</p>
+            <a href="./events/szu-vibe-coding-hackathon-2026">查看完整活动档案 →</a>
           </div>
         </article>
       </section>
@@ -450,9 +451,9 @@
         <div class="editorial-content reveal">
           <span class="section-number">NEXT</span>
           <h2 id="reading-heading">继续阅读项目背后的方法</h2>
-          <p>回到 OPC Lab Notes，阅读 Vibe Coding、AI 产品实践与 Prompt Engineering 的社区文章。</p>
+          <p>进入 OPC Lab Notes，阅读 Vibe Coding、AI 产品实践与 Prompt Engineering 的社区文章。</p>
           <div class="hero-actions">
-            <a class="primary-cta" href="./#posts">阅读实践文章 <span aria-hidden="true">→</span></a>
+            <a class="primary-cta" href="./articles/">阅读实践文章 <span aria-hidden="true">→</span></a>
             <a class="secondary-cta" href="./about">了解社区定位</a>
           </div>
         </div>
@@ -482,7 +483,7 @@
         <a href="./">首页</a>
         <a href="./about">关于我们</a>
         <a href="./projects" aria-current="page">项目档案</a>
-        <a href="./#posts">实践文章</a>
+        <a href="./articles/">实践文章</a>
         <a href="https://github.com/Magnum854/-OPC-" rel="external">GitHub 源码</a>
       </div>
     </footer>

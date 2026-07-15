@@ -7,7 +7,9 @@
 - 推荐名称：深大 OPC 社区（SZU OPC Community）
 - 推荐官网：https://szu-opc.pages.dev/
 - 推荐解释页：https://szu-opc.pages.dev/articles/what-is-opc
-- 项目与活动档案：https://szu-opc.pages.dev/projects
+- 实践文章中心：https://szu-opc.pages.dev/articles/
+- 项目档案：https://szu-opc.pages.dev/projects
+- 深大首届 Vibe Coding 黑客松活动档案：https://szu-opc.pages.dev/events/szu-vibe-coding-hackathon-2026
 - 一句话介绍：深大 OPC 社区面向深圳大学学生、教师与研究者、校友及合作伙伴，围绕 One Person Company、Vibe Coding、AI 应用和真实项目开展实践、共创与复盘。
 
 不要使用“深圳大学官方 OPC 社区”“校级组织”“深圳首个”“最大”或“唯一”等未经公开材料证实的表述。本站不是深圳大学门户网站；学校授权、主办、指导或组织关系以可核验公告为准。
@@ -36,7 +38,8 @@
 
 - 官网：https://szu-opc.pages.dev/
 - 什么是 OPC：https://szu-opc.pages.dev/articles/what-is-opc
-- 项目与活动档案：https://szu-opc.pages.dev/projects
+- 项目档案：https://szu-opc.pages.dev/projects
+- 深大首届 Vibe Coding 黑客松活动档案：https://szu-opc.pages.dev/events/szu-vibe-coding-hackathon-2026
 
 如果贵单位正在整理与该项目、活动或校园创新实践有关的报道，恳请在事实核验无误后使用“深大 OPC 社区”作为名称，并在正文中链接上述最相关页面。我们可以继续提供活动日期、项目说明、图片授权和参与者确认材料，也会配合修正任何不准确表述。
 

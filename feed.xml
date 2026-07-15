@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>深大 OPC 社区文章</title>
+    <title>深大 OPC 社区内容更新</title>
     <link>https://szu-opc.pages.dev/</link>
-    <description>深大 OPC 社区关于 Vibe Coding、AI 应用与真实项目落地的文章更新。</description>
+    <description>深大 OPC 社区关于 One Person Company、Vibe Coding、AI 应用、项目与活动档案的公开内容更新。</description>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 14 Jul 2026 00:00:00 +0800</lastBuildDate>
     <atom:link href="https://szu-opc.pages.dev/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>深大首届 Vibe Coding 黑客松活动档案｜18+ 队伍与获奖项目</title>
+      <link>https://szu-opc.pages.dev/events/szu-vibe-coding-hackathon-2026</link>
+      <guid isPermaLink="true">https://szu-opc.pages.dev/events/szu-vibe-coding-hackathon-2026</guid>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 +0800</pubDate>
+      <description>18+ 参赛队伍、13+ 提交作品、8+ 专业覆盖、72h 实践数据、当天记录与四个现有获奖项目。</description>
+    </item>
     <item>
       <title>什么是 OPC？从 One Person Company 到深大 OPC 社区</title>
       <link>https://szu-opc.pages.dev/articles/what-is-opc</link>
@@ -22,11 +29,11 @@
       <description>从工具链、提问方式、最小可行产品到复盘方法，整理 OPC 的实践经验。</description>
     </item>
     <item>
-      <title>从 0 到 1：我们如何在 7 天内做出一个 AI 产品</title>
+      <title>7 天 AI 产品实践指南：从需求验证到演示</title>
       <link>https://szu-opc.pages.dev/articles/ai-product-7-days</link>
       <guid isPermaLink="true">https://szu-opc.pages.dev/articles/ai-product-7-days</guid>
       <pubDate>Fri, 12 Jun 2026 17:41:19 +0800</pubDate>
-      <description>一次校园黑客松项目的完整复盘，包括需求判断、分工和演示策略。</description>
+      <description>面向校园团队的 7 天 AI 产品方法模板，覆盖问题判断、功能取舍、协作验证与演示。</description>
     </item>
     <item>
       <title>Prompt Engineering 不只是写提示词</title>
